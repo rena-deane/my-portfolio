@@ -1,34 +1,10 @@
 
-# my-portfolio
+# Rena-Deane
 
-it's a real sweet app
+My blogs and projects
 
-## how
+## Technologies
 
-### install
-
-```
-git clone https://github.com/rena-deane/my-portfolio
-cd 
-npm install
-```
-
-## develop
-
-```
-npm start
-```
-
-browse to <http://localhost:9966/>.
-
-## test
-
-```
-npm test
-```
-
-## deploy
-
-```
-npm run deploy
-```
+List the technologies used in this project
+- NodeJS
+- React
