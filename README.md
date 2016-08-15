@@ -1,10 +1,21 @@
 
 # Rena-Deane
 
-My blogs and projects
+A place to show the projects I've worked on and the things I'm interested in.
 
-## Technologies
+## Learning Objectives
 
-List the technologies used in this project
-- NodeJS
-- React
+Initial:
+
+- [ ] React
+- [ ] Firebase*
+- [ ] React Bootstrap
+- [ ] OAuth
+
+Next Steps:
+
+Create a blog OR spike on using these technologies
+- [ ] Angular*
+- [ ] Mongo*
+
+*new technology for me to learn
