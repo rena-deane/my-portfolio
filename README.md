@@ -1,13 +1,7 @@
 
 # Rena-Deane
 
-My blogs and projects
-
-## Technologies
-
-List the technologies used in this project
-- NodeJS
-- React
+A place to show the projects I've worked on and my journey in to Web Development.
 
 ## Pages
 - [ ] Home
@@ -16,3 +10,6 @@ List the technologies used in this project
 - [ ] Resume
 - [ ] Contact
 
+## How?
+- React
+- React Bootstrap
