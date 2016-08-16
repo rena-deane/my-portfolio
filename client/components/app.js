@@ -1,13 +1,20 @@
 import React, { Component } from 'react'
+import Routes from './routes/routes'
 
 class App extends Component {
 
-  constructor (props) {
-    super(props)
-  }
-
   render () {
-    return <h1>Welcome to {this.props.name}</h1>
+    return (
+      <div id='app-wrapper'>
+        <div className='nav-wrapper'>
+          <h1>Nav goes here</h1>
+        </div>
+
+        <div className='content-wrapper'>
+          {this.props.children}
+        </div>
+      </div>
+    )
   }
 
 }
