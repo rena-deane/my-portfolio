@@ -13,5 +13,6 @@ List the technologies used in this project
 - [ ] Home
 - [ ] About
 - [ ] Journey to Web Development
+- [ ] Resume
 - [ ] Contact
 
