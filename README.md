@@ -1,19 +1,27 @@
-
 # Rena-Deane
 
 A place to show the projects I've worked on and my journey in to Web Development.
 
 ## Pages
 - [ ] Home
-- [ ] About
-- [ ] Journey to Web Development
-- [ ] Resume
+- [ ] About (Journey to Web Development)
+- [ ] Projects (Web and others)
+- [ ] Work
 - [ ] Contact
 
 ## Features
 - [ ] Search function
-- [ ] Make direct contact via website
+- [ ] Make direct contact via website?
 
 ## How?
+- NodeJS
 - React
-- React Bootstrap
+- HTML/CSS
+- Browserify
+
+## Refactor
+- Customise logo
+- Sass
+- Webpack
+- SQLite
+  - Store resume details in Database => if I update my resume in the database it would render
