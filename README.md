@@ -8,3 +8,10 @@ My blogs and projects
 List the technologies used in this project
 - NodeJS
 - React
+
+## Pages
+- [ ] Home
+- [ ] About
+- [ ] Journey to Web Development
+- [ ] Contact
+
