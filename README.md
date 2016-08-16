@@ -1,21 +1,15 @@
 
 # Rena-Deane
 
-A place to show the projects I've worked on and the things I'm interested in.
+A place to show the projects I've worked on and my journey in to Web Development.
 
-## Learning Objectives
+## Pages
+- [ ] Home
+- [ ] About
+- [ ] Journey to Web Development
+- [ ] Resume
+- [ ] Contact
 
-Initial:
-
-- [ ] React
-- [ ] Firebase*
-- [ ] React Bootstrap
-- [ ] OAuth
-
-Next Steps:
-
-Create a blog OR spike on using these technologies
-- [ ] Angular*
-- [ ] Mongo*
-
-*new technology for me to learn
+## How?
+- React
+- React Bootstrap
