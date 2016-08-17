@@ -555,8 +555,3 @@ template {
   .offset-by-one-half.column,
   .offset-by-one-half.columns {
     margin-left: 52%; } }
-
-/* Navbar */
-.navlist {
-  display: flex;
-  list-style: none; }
