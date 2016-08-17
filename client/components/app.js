@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Routes from './routes/routes'
 import Nav from './Nav'
 import About from './About'
 import Projects from './Projects'
@@ -12,23 +11,18 @@ class App extends Component {
     return (
       <div id='app-wrapper'>
         <Nav />
-
         <div className='content-wrapper'>
           <About />
         </div>
-
         <div className='content-wrapper'>
           <Projects />
         </div>
-
         <div className='content-wrapper'>
           <Work />
         </div>
-
         <div className='content-wrapper'>
           <Connect />
         </div>
-
       </div>
     )
   }
