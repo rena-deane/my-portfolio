@@ -11,7 +11,8 @@
     "push": "gh-pages -d dist",
     "deploy": "npm run build && npm run dist && npm run push",
     "build-css": "node-sass --include-path scss scss/main.scss   public/css/main.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "lint": "standard --fix"
   },
   "browserify": {
     "transform": [
