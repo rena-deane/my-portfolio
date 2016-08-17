@@ -5,20 +5,26 @@ class Navigation extends Component {
 
   render () {
     return (
-      <Navbar>
+      <Navbar fixedTop>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href='#'>React-Bootstrap</a>
+            <a href='#'>Rena-Deane</a>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight>
-            <NavItem eventKey={1} href='#'>
-              Link Right
+            <NavItem eventKey={1} href='#about' className='list-link'>
+              ABOUT
             </NavItem>
-            <NavItem eventKey={2} href='#'>
-              Link Right
+            <NavItem eventKey={2} href='#projects' className='list-link'>
+              PROJECTS
+            </NavItem>
+            <NavItem eventKey={3} href='#work' className='list-link'>
+              WORK
+            </NavItem>
+            <NavItem eventKey={4} href='#connect' className='list-link'>
+              CONNECT
             </NavItem>
           </Nav>
         </Navbar.Collapse>
