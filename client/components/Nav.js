@@ -4,8 +4,8 @@ class Nav extends Component {
   render () {
     return (
       <div id='nav-wrapper'>
-        <nav className="navbar navbar-default">
-          <ul className="nav navbar-nav">
+        <nav className='navbar navbar-default'>
+          <ul className='nav navbar-nav'>
             <span className='home-logo'><a href='#'>Logo</a></span>
             <li><a href='#about'>About</a></li>
             <li><a href='#projects'>Projects</a></li>
