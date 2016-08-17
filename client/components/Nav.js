@@ -1,21 +1,36 @@
 import React, { Component } from 'react'
+import { Navbar, Nav, NavItem } from 'react-bootstrap'
 
-class Nav extends Component {
+class Navigation extends Component {
+
   render () {
     return (
-      <div id='nav-wrapper'>
-        <nav className='navbar navbar-default'>
-          <ul className='nav navbar-nav'>
-            <span className='home-logo'><a href='#'>Logo</a></span>
-            <li><a href='#about'>About</a></li>
-            <li><a href='#projects'>Projects</a></li>
-            <li><a href='#work'>Work</a></li>
-            <li><a href='#connect'>Connect</a></li>
-          </ul>
-        </nav>
-      </div>
+      <Navbar fixedTop>
+        <Navbar.Header>
+          <Navbar.Brand>
+            <a href='#'>Rena-Deane</a>
+          </Navbar.Brand>
+          <Navbar.Toggle />
+        </Navbar.Header>
+        <Navbar.Collapse>
+          <Nav pullRight>
+            <NavItem eventKey={1} href='#about' className='list-link'>
+              ABOUT
+            </NavItem>
+            <NavItem eventKey={2} href='#projects' className='list-link'>
+              PROJECTS
+            </NavItem>
+            <NavItem eventKey={3} href='#work' className='list-link'>
+              WORK
+            </NavItem>
+            <NavItem eventKey={4} href='#connect' className='list-link'>
+              CONNECT
+            </NavItem>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     )
   }
 }
 
-export default Nav
+export default Navigation
