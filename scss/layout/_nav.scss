@@ -1,6 +1,37 @@
 /* Navbar */
+/* .container {
+  padding: 0;
+} */
+
+.navbar-header {
+  background-color: #fff;
+}
+
 .navbar-default {
-  background: none;
+  background-color: #fff;
   border: 0;
   margin: 0;
+  .container{
+    background-color: #fff;
+  }
+}
+
+.navbar-toggle {
+  border: 0;
+}
+
+.navbar-collapse {
+  border: 0;
+}
+
+@media (min-width: 768px) {
+  .navbar-default {
+    background: none;
+  .container {
+    background: none;
+    .navbar-header {
+      background: none;
+    }
+  }
+ }
 }
