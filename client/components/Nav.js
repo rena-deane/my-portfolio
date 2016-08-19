@@ -5,7 +5,7 @@ class Navigation extends Component {
 
   render () {
     return (
-      <Navbar fixedTop>
+      <Navbar staticTop>
         <Navbar.Header>
           <Navbar.Brand>
             <a href='#'>Rena-Deane</a>

@@ -2,6 +2,9 @@
 .navbar-default {
   background-color: rgba(131, 140, 120, 1);
   border: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
   .container {
     background-color: rgba(131, 140, 120, 0);
     .navbar-header {
@@ -61,6 +64,9 @@
     }
     a.navbar-brand {
       font-size: 2em;
+      &:hover &:active {
+        color: $white;
+      }
     }
     .navbar-nav li a {
       margin-left: 1.25em;
