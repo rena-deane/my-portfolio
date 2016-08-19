@@ -560,25 +560,25 @@ template {
 body {
   font-family: 'Fira Sans', sans-serif; }
 
-/* Navbar */
-/* .container {
-  padding: 0;
-} */
-.navbar-header {
-  background-color: #fff; }
-
+/* colors */
 .navbar-default {
-  background-color: #fff;
+  background: none;
   border: 0;
-  margin: 0; }
+  padding-top: 1em; }
   .navbar-default .container {
-    background-color: #fff; }
+    background: none; }
+    .navbar-default .container .navbar-header {
+      background: none; }
+  .navbar-default .navbar-nav li a {
+    color: #ffffff; }
 
 .navbar-toggle {
   border: 0; }
 
 .navbar-collapse {
   border: 0; }
+  .navbar-collapse .list-link a {
+    text-align: center; }
 
 @media (min-width: 768px) {
   .navbar-default {
@@ -586,4 +586,38 @@ body {
     .navbar-default .container {
       background: none; }
       .navbar-default .container .navbar-header {
-        background: none; } }
+        background: none; }
+    .navbar-default .navbar-nav li a {
+      margin-left: 1.25em; } }
+
+.content-wrapper.home {
+  background-image: url("../images/rangitukia.jpg");
+  background-size: cover;
+  height: 20em;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .content-wrapper.home h2 {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em;
+    /* Adjust as needed */
+    animation: typing 3s steps(40, end); }
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  .content-wrapper.home {
+    height: 100vh;
+    background-image: url("../images/rangitukia.jpg");
+    background-size: cover; } }

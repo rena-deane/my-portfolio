@@ -13,19 +13,19 @@ class App extends Component {
       <div id='app-wrapper'>
         <a name='#'></a>
         <Nav />
-        <div className='content-wrapper'>
+        <div className='content-wrapper home'>
           <Home />
         </div>
-        <div className='content-wrapper'>
+        <div className='content-wrapper about'>
           <About />
         </div>
-        <div className='content-wrapper'>
+        <div className='content-wrapper projects'>
           <Projects />
         </div>
-        <div className='content-wrapper'>
+        <div className='content-wrapper work'>
           <Work />
         </div>
-        <div className='content-wrapper'>
+        <div className='content-wrapper connect'>
           <Connect />
         </div>
       </div>
