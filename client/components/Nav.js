@@ -23,7 +23,7 @@ class Navigation extends Component {
             <NavItem eventKey={3} href='#work' className='list-link'>
               WORK
             </NavItem>
-            <NavItem eventKey={4} href='#connect' className='list-link'>
+            <NavItem eventKey={4} href='#connect' className='list-link connect'>
               CONNECT
             </NavItem>
           </Nav>

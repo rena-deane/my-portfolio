@@ -1,11 +1,19 @@
+/* Overide react-bootstrap nav border backgrounds */
 .navbar-default {
-  background: none;
+  background-color: rgba(131, 140, 120, 1);
   border: 0;
-  padding-top: 1em;
   .container {
-    background: none;
+    background-color: rgba(131, 140, 120, 0);
     .navbar-header {
-      background: none;
+      background-color: rgba(131, 140, 120, 0);
+    }
+  }
+  a.navbar-brand {
+    color: $white;
+    font-family: 'Lobster', cursive;
+    letter-spacing: .5px;
+    &:hover {
+      color: $white;
     }
   }
   .navbar-nav li {
@@ -19,24 +27,50 @@
   border: 0;
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: $white;
+}
+
 .navbar-collapse {
   border: 0;
+  overflow: hidden;
   .list-link a {
     text-align: center;
   }
 }
 
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-collapse.collapse.in {
+  border: 0;
+}
+
 @media (min-width: 768px) {
   .navbar-default {
     background: none;
-  .container {
-    background: none;
-    .navbar-header {
+    .container {
       background: none;
+      max-width: 100%;
+      margin: 1.5em auto;
+      .navbar-header {
+        background: none;
+      }
+    }
+    a.navbar-brand {
+      font-size: 2em;
+    }
+    .navbar-nav li a {
+      margin-left: 1.25em;
+      font-size: 1.15em;
     }
   }
-  .navbar-nav li a {
-    margin-left: 1.25em;
+  li.list-link.connect a {
+    border: 2px solid $white;
+    &:hover {
+      background-color: $white;
+    }
   }
- }
 }
