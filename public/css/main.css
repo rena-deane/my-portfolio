@@ -619,7 +619,9 @@ body {
       margin-left: 1.25em;
       font-size: 1.15em; }
   li.list-link.connect a {
-    border: 2px solid #ffffff; }
+    border: 2px solid #ffffff;
+    background-color: none;
+    transition: background-color .5s; }
     li.list-link.connect a:hover {
       background-color: #ffffff; } }
 
