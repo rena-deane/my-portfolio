@@ -14,7 +14,7 @@ class Navigation extends Component {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight>
-            <NavItem eventKey={1} href='#about' className='list-link'>
+            <NavItem eventKey={1} href='#about' className='list-link' data-hover='Ko Au'>
               ABOUT
             </NavItem>
             <NavItem eventKey={2} href='#projects' className='list-link'>

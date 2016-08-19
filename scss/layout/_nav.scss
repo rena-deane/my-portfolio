@@ -1,18 +1,17 @@
-/* Navbar */
-/* .container {
-  padding: 0;
-} */
-
-.navbar-header {
-  background-color: #fff;
-}
-
 .navbar-default {
-  background-color: #fff;
+  background: none;
   border: 0;
-  margin: 0;
-  .container{
-    background-color: #fff;
+  padding-top: 1em;
+  .container {
+    background: none;
+    .navbar-header {
+      background: none;
+    }
+  }
+  .navbar-nav li {
+    a {
+      color: $white;
+    }
   }
 }
 
@@ -22,6 +21,9 @@
 
 .navbar-collapse {
   border: 0;
+  .list-link a {
+    text-align: center;
+  }
 }
 
 @media (min-width: 768px) {
@@ -32,6 +34,9 @@
     .navbar-header {
       background: none;
     }
+  }
+  .navbar-nav li a {
+    margin-left: 1.25em;
   }
  }
 }

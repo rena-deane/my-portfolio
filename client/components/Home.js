@@ -4,7 +4,7 @@ class Home extends Component {
   render () {
     return (
       <div className='home-wrapper'>
-          <h2>Home information goes here</h2>
+          <h2>Nau mai ki taku wharangi ipurangi</h2>
       </div>
     )
   }
