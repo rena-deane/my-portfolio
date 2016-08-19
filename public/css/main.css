@@ -565,15 +565,10 @@ body {
 /* colors */
 /* Overide react-bootstrap nav border backgrounds */
 .navbar-default {
-  background-color: #838c78;
-  border: 0;
-  position: absolute;
-  width: 100%;
-  z-index: 1; }
-  .navbar-default .container {
-    background-color: rgba(131, 140, 120, 0); }
-    .navbar-default .container .navbar-header {
-      background-color: rgba(131, 140, 120, 0); }
+  background-color: #a5b6cd;
+  border: 0; }
+  .navbar-default > div {
+    background-color: #a5b6cd; }
   .navbar-default a.navbar-brand {
     color: #ffffff;
     font-family: 'Lobster', cursive;
@@ -604,6 +599,9 @@ body {
 
 @media (min-width: 768px) {
   .navbar-default {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
     background: none; }
     .navbar-default .container {
       background: none;
@@ -618,6 +616,15 @@ body {
     .navbar-default .navbar-nav li a {
       margin-left: 1.25em;
       font-size: 1.15em; }
+  .navbar-default.scroll {
+    background-color: #a5b6cd; }
+    .navbar-default.scroll .container {
+      margin: .75em auto; }
+      .navbar-default.scroll .container ul.nav {
+        display: flex;
+        align-items: center; }
+      .navbar-default.scroll .container .connect a {
+        padding: 0.5em 0.75em; }
   li.list-link.connect a {
     border: 2px solid #ffffff;
     background-color: none;

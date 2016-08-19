@@ -1,15 +1,9 @@
 /* Overide react-bootstrap nav border backgrounds */
 .navbar-default {
-  background-color: rgba(131, 140, 120, 1);
+  background-color: $sky-misty-blue;
   border: 0;
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-  .container {
-    background-color: rgba(131, 140, 120, 0);
-    .navbar-header {
-      background-color: rgba(131, 140, 120, 0);
-    }
+  & > div {
+    background-color: $sky-misty-blue;
   }
   a.navbar-brand {
     color: $white;
@@ -53,6 +47,7 @@
 
 @media (min-width: 768px) {
   .navbar-default {
+    @include transition-all();
     background: none;
     .container {
       background: none;
@@ -73,6 +68,21 @@
       font-size: 1.15em;
     }
   }
+
+  .navbar-default.scroll {
+    background-color: $sky-misty-blue;
+    .container {
+      margin: .75em auto;
+      ul.nav {
+        display: flex;
+        align-items: center;
+      }
+      .connect a {
+        padding: 0.5em 0.75em;
+      }
+    }
+  }
+
   li.list-link.connect a {
     border: 2px solid $white;
     background-color: none;
