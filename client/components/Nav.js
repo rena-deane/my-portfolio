@@ -2,10 +2,38 @@ import React, { Component } from 'react'
 import { Navbar, Nav, NavItem } from 'react-bootstrap'
 
 class Navigation extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      isScrolling: false,
+      isFetching: true
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+    this.setState({
+      isFetching: false,
+    })
+  }
+
+  componentWillUnmount () {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll () {
+    let body = document.getElementsByTagName('body')[0]
+    console.log('scrolling', body.scrollTop)
+    if (body.scrollTop > 400) {
+      return document.getElementsByClassName('navbar')[0].classList.add('scroll')
+    } else {
+      return document.getElementsByClassName('navbar')[0].classList.remove('scroll')
+    }
+  }
 
   render () {
     return (
-      <Navbar staticTop>
+      <Navbar fixedTop className={this.state.isScrolling ? 'scroll' : '' }>
         <Navbar.Header>
           <Navbar.Brand>
             <a href='#'>Rena-Deane</a>
