@@ -514,7 +514,7 @@ template {
   .two-thirds.column {
     width: 65.3333333333%; }
   .one-half.column {
-    width: 48%; }
+    width: 50%; }
   /* Offsets */
   .offset-by-one.column,
   .offset-by-one.columns {
@@ -617,7 +617,7 @@ body {
       font-size: 1.15em;
       margin-left: 1.25em; }
   .navbar-default.scroll {
-    background-color: #a5b6cd;
+    background-color: rgba(165, 182, 205, 0.9);
     display: flex;
     align-items: center;
     height: 3.5em; }

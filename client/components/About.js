@@ -4,8 +4,6 @@ class About extends Component {
   render () {
     return (
       <div className='about-wrapper'>
-        <a name='about'></a>
-
         <div className='about-me one-half column'>
           <h3>Ko Hikurangi te maunga,</h3>
           <h3>Ko Waiapu te awa,</h3>
