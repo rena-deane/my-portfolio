@@ -4,9 +4,21 @@ class Projects extends Component {
   render () {
     return (
       <div className='projects-wrapper'>
-        <a name='projects'>
-          <h2>Projects information goes here</h2>
-        </a>
+        <a name='projects'></a>
+
+        <div className='project-one six columns'>
+          <h2>Talk about the projects over here</h2>
+        </div>
+
+        <div className='project-summary six columns'>
+          <div className='project-two four columns'>
+          </div>
+          <div className='project-three four columns'>
+          </div>
+          <div className='project-one four columns'>
+          </div>
+        </div>
+
       </div>
     )
   }

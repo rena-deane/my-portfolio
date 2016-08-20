@@ -64,21 +64,24 @@
       }
     }
     .navbar-nav li a {
-      margin-left: 1.25em;
       font-size: 1.15em;
+      margin-left: 1.25em;
     }
   }
 
   .navbar-default.scroll {
     background-color: $sky-misty-blue;
+    display: flex;
+    align-items: center;
+    height: 3.5em;
     .container {
-      margin: .75em auto;
+      margin: 0 auto;
       ul.nav {
         display: flex;
         align-items: center;
       }
       .connect a {
-        padding: 0.5em 0.75em;
+        padding: 0.25em 0.75em;
       }
     }
   }
