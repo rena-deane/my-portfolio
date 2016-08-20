@@ -674,3 +674,11 @@ body {
 .projects-wrapper {
   width: 100%;
   height: 100vh; }
+  .projects-wrapper .project.piro {
+    background-image: url("../images/piro.png");
+    background-size: cover;
+    height: 100vh; }
+  .projects-wrapper .project.takapau {
+    background-image: url("../images/takapau.png");
+    background-size: cover;
+    height: 100vh; }

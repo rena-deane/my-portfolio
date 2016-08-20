@@ -21,7 +21,6 @@ class App extends Component {
         <div className='content-wrapper about'>
           <About />
         </div>
-        <a name='projects'></a>
         <div className='content-wrapper projects'>
           <Projects />
         </div>
