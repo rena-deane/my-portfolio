@@ -1,12 +1,17 @@
-@mixin transition-all() {
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  transition: all .5s;
+@mixin transition-all($time) {
+  -webkit-transition: all $time;
+  -moz-transition: all $time;
+  transition: all $time;
 }
 
 @mixin home-background() {
   background: #d36301; /* Old browsers */
-  background: -moz-linear-gradient(top, #d36301 0%, #e8b400 98%);
-  background: -webkit-linear-gradient(top, #d36301 0%,#e8b400 98%);
-  background: linear-gradient(to bottom, #d36301 0%,#e8b400 98%);
+  background: -moz-linear-gradient(top, #d36301 0%, #e8b400 15%);
+  background: -webkit-linear-gradient(top, #d36301 0%,#e8b400 15%);
+  background: linear-gradient(to bottom, #d36301 0%,#e8b400 15%);
+}
+
+@mixin grayscale($gray) {
+    -webkit-filter: grayscale($gray); /* Chrome, Safari, Opera */
+    filter: grayscale($gray);
 }
