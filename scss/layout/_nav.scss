@@ -9,14 +9,14 @@
     color: $white;
     font-family: 'Lobster', cursive;
     letter-spacing: .5px;
-    &:hover {
-      color: $white;
-    }
   }
   .navbar-nav li {
     a {
       color: $white;
     }
+  }
+  a:hover, a:active {
+    color: $white;
   }
 }
 
