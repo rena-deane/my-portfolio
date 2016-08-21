@@ -47,7 +47,7 @@
 
 @media (min-width: 768px) {
   .navbar-default {
-    @include transition-all();
+    @include transition-all(0.5s);
     background: none;
     .container {
       background: none;
@@ -70,7 +70,7 @@
   }
 
   .navbar-default.scroll {
-    background-color: rgba($scroll-yellow, .9);
+    background-color: rgba($sky-orange, .9);
     display: flex;
     align-items: center;
     height: 3.5em;
@@ -84,10 +84,6 @@
         padding: 0.25em 0.75em;
       }
     }
-  }
-
-  .hidenav {
-    visibility: hidden;
   }
 
   li.list-link.connect a {

@@ -2,22 +2,44 @@
   width: 100%;
   height: 100vh;
   .project-content {
-    height: 100vh;
-    overflow: scroll;
+    .project {
+      height: 100vh;
+      @include grayscale(100%);
+      @include transition-all(1s)
+      .content {
+        display: none;
+      }
+      &:hover {
+        @include grayscale(0%);
+        .content {
+          display: block;
+        }
+      }
+    }
     .project.piro {
       background-image: url('../images/piro.png');
       background-size: cover;
-      height: 100vh;
     }
     .project.takapau {
       background-image: url('../images/takapau.png');
       background-size: cover;
-      height: 100vh;
     }
   }
 }
 
-
 @media (min-width: 768px) {
-
+  .projects-wrapper {
+    width: 100%;
+    height: 100vh;
+    .project-content {
+      .project.piro {
+        background-image: url('../images/piro.png');
+        background-size: cover;
+      }
+      .project.takapau {
+        background-image: url('../images/takapau.png');
+        background-size: cover;
+      }
+    }
+  }
 }

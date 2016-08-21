@@ -1,5 +1,8 @@
-.content-wrapper.home {
+body {
   @include home-background()
+}
+
+.content-wrapper.home {
   height: 20em;
   display: flex;
   align-items: center;
@@ -8,8 +11,10 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+  body {
+    @include home-background()
+  }
   .content-wrapper.home {
     height: 100vh;
-    @include home-background()
   }
 }
