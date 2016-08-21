@@ -1,9 +1,9 @@
 /* Overide react-bootstrap nav border backgrounds */
 .navbar-default {
-  background-color: $sky-misty-blue;
+  background-color: $sky-orange;
   border: 0;
   & > div {
-    background-color: $sky-misty-blue;
+    background-color: $sky-orange;
   }
   a.navbar-brand {
     color: $white;
@@ -64,23 +64,30 @@
       }
     }
     .navbar-nav li a {
-      margin-left: 1.25em;
       font-size: 1.15em;
+      margin-left: 1.25em;
     }
   }
 
   .navbar-default.scroll {
-    background-color: $sky-misty-blue;
+    background-color: rgba($scroll-yellow, .9);
+    display: flex;
+    align-items: center;
+    height: 3.5em;
     .container {
-      margin: .75em auto;
+      margin: 0 auto;
       ul.nav {
         display: flex;
         align-items: center;
       }
       .connect a {
-        padding: 0.5em 0.75em;
+        padding: 0.25em 0.75em;
       }
     }
+  }
+
+  .hidenav {
+    visibility: hidden;
   }
 
   li.list-link.connect a {

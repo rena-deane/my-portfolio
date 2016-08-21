@@ -13,18 +13,22 @@ class App extends Component {
       <div id='app-wrapper'>
         <a name='#'></a>
         <Nav />
+        <a name='home'></a>
         <div className='content-wrapper home'>
           <Home />
         </div>
+        <a name='about'></a>
         <div className='content-wrapper about'>
           <About />
         </div>
         <div className='content-wrapper projects'>
           <Projects />
         </div>
+        <a name='work'></a>
         <div className='content-wrapper work'>
           <Work />
         </div>
+        <a name='connect'></a>
         <div className='content-wrapper connect'>
           <Connect />
         </div>

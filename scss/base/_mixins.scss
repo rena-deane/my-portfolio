@@ -3,3 +3,10 @@
   -moz-transition: all .5s;
   transition: all .5s;
 }
+
+@mixin home-background() {
+  background: #d36301; /* Old browsers */
+  background: -moz-linear-gradient(top, #d36301 0%, #e8b400 98%);
+  background: -webkit-linear-gradient(top, #d36301 0%,#e8b400 98%);
+  background: linear-gradient(to bottom, #d36301 0%,#e8b400 98%);
+}
