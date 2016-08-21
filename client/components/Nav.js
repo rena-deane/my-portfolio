@@ -23,10 +23,11 @@ class Navigation extends Component {
 
   handleScroll () {
     let body = document.getElementsByTagName('body')[0]
-    if (body.scrollTop > 400) {
-      return document.getElementsByClassName('navbar')[0].classList.add('scroll')
+    let navbar = document.getElementsByClassName('navbar')[0]
+    if (body.scrollTop > 500) {
+      return navbar.classList.add('scroll')
     } else {
-      return document.getElementsByClassName('navbar')[0].classList.remove('scroll')
+      return navbar.classList.remove('scroll')
     }
   }
 

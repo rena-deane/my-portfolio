@@ -1,18 +1,21 @@
 .projects-wrapper {
   width: 100%;
   height: 100vh;
-  .project.piro {
-    background-image: url('../images/piro.png');
-    background-size: cover;
+  .project-content {
     height: 100vh;
-  }
-  .project.takapau {
-    background-image: url('../images/takapau.png');
-    background-size: cover;
-    height: 100vh;
+    overflow: scroll;
+    .project.piro {
+      background-image: url('../images/piro.png');
+      background-size: cover;
+      height: 100vh;
+    }
+    .project.takapau {
+      background-image: url('../images/takapau.png');
+      background-size: cover;
+      height: 100vh;
+    }
   }
 }
-
 
 
 @media (min-width: 768px) {

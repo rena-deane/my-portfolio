@@ -1,9 +1,9 @@
 /* Overide react-bootstrap nav border backgrounds */
 .navbar-default {
-  background-color: $sky-misty-blue;
+  background-color: $sky-orange;
   border: 0;
   & > div {
-    background-color: $sky-misty-blue;
+    background-color: $sky-orange;
   }
   a.navbar-brand {
     color: $white;
@@ -70,7 +70,7 @@
   }
 
   .navbar-default.scroll {
-    background-color: rgba(165, 182, 205, .9);
+    background-color: rgba($scroll-yellow, .9);
     display: flex;
     align-items: center;
     height: 3.5em;
@@ -84,6 +84,10 @@
         padding: 0.25em 0.75em;
       }
     }
+  }
+
+  .hidenav {
+    visibility: hidden;
   }
 
   li.list-link.connect a {
