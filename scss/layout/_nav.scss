@@ -6,17 +6,17 @@
     background-color: $sky-orange;
   }
   a.navbar-brand {
-    color: $white;
+    color: $nav-link;
     font-family: 'Lobster', cursive;
     letter-spacing: .5px;
   }
   .navbar-nav li {
     a {
-      color: $white;
+      color: $nav-link;
     }
   }
   a:hover, a:active {
-    color: $white;
+    color: $nav-link;
   }
 }
 
@@ -59,8 +59,8 @@
     }
     a.navbar-brand {
       font-size: 2em;
-      &:hover &:active {
-        color: $white;
+      &:hover, &:active {
+        color: $nav-link;
       }
     }
     .navbar-nav li a {
@@ -70,7 +70,7 @@
   }
 
   .navbar-default.scroll {
-    background-color: rgba($sky-orange, .9);
+    background-color: rgba($scroll-nav, .95);
     display: flex;
     align-items: center;
     height: 3.5em;
@@ -87,11 +87,12 @@
   }
 
   li.list-link.connect a {
-    border: 2px solid $white;
+    border: 2px solid $nav-link;
     background-color: none;
     transition: background-color .5s;
     &:hover {
-      background-color: $white;
+      color: $white;
+      background-color: $nav-link;
     }
   }
 
