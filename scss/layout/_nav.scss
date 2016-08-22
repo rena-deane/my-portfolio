@@ -1,9 +1,9 @@
 /* Overide react-bootstrap nav border backgrounds */
 .navbar-default {
-  background-color: $sky-orange;
+  background-color: $scroll-nav;
   border: 0;
   & > div {
-    background-color: $sky-orange;
+    background-color: $scroll-nav;
   }
   a.navbar-brand {
     color: $nav-link;
@@ -15,7 +15,8 @@
       color: $nav-link;
     }
   }
-  a:hover, a:active {
+  a:hover, a:active, a:visited {
+    -webkit-color: $nav-link;
     color: $nav-link;
   }
 }
@@ -25,7 +26,7 @@
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: $white;
+    background-color: $nav-link;
 }
 
 .navbar-collapse {
@@ -58,6 +59,7 @@
       }
     }
     a.navbar-brand {
+      color: $nav-link;
       font-size: 2em;
       &:hover, &:active {
         color: $nav-link;

@@ -565,24 +565,25 @@ body {
 /* colors */
 /* Overide react-bootstrap nav border backgrounds */
 .navbar-default {
-  background-color: #D36301;
+  background-color: #fffad5;
   border: 0; }
   .navbar-default > div {
-    background-color: #D36301; }
+    background-color: #fffad5; }
   .navbar-default a.navbar-brand {
-    color: #BD4932;
+    color: #105B63;
     font-family: 'Lobster', cursive;
     letter-spacing: .5px; }
   .navbar-default .navbar-nav li a {
-    color: #BD4932; }
-  .navbar-default a:hover, .navbar-default a:active {
-    color: #BD4932; }
+    color: #105B63; }
+  .navbar-default a:hover, .navbar-default a:active, .navbar-default a:visited {
+    -webkit-color: #105B63;
+    color: #105B63; }
 
 .navbar-toggle {
   border: 0; }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #ffffff; }
+  background-color: #105B63; }
 
 .navbar-collapse {
   border: 0;
@@ -610,9 +611,10 @@ body {
       .navbar-default .container .navbar-header {
         background: none; }
     .navbar-default a.navbar-brand {
+      color: #105B63;
       font-size: 2em; }
       .navbar-default a.navbar-brand:hover, .navbar-default a.navbar-brand:active {
-        color: #BD4932; }
+        color: #105B63; }
     .navbar-default .navbar-nav li a {
       font-size: 1.15em;
       margin-left: 1.25em; }
@@ -629,40 +631,32 @@ body {
       .navbar-default.scroll .container .connect a {
         padding: 0.25em 0.75em; }
   li.list-link.connect a {
-    border: 2px solid #BD4932;
+    border: 2px solid #105B63;
     background-color: none;
     transition: background-color .5s; }
     li.list-link.connect a:hover {
       color: #ffffff;
-      background-color: #BD4932; } }
+      background-color: #105B63; } }
 
 body {
-  background: #ffd34e;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #ffd34e 0%, #fffad5 30%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #ffd34e 0%, #fffad5 30%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #ffd34e 0%, #fffad5 30%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  background-color: #fffad5; }
 
 .content-wrapper.home {
+  display: none;
+  background-image: url("../../public/images/waiapu-valley.jpg");
+  background-size: cover;
+  background-position: center;
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  width: 100%; }
+
+.home-wrapper {
+  width: 100%; }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
-  body {
-    background: #ffd34e;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #ffd34e 0%, #fffad5 30%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #ffd34e 0%, #fffad5 30%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #ffd34e 0%, #fffad5 30%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
   .content-wrapper.home {
     height: 100vh; } }
 
@@ -704,6 +698,9 @@ body {
   width: 100%;
   height: 100vh; }
   .projects-wrapper .project-content .project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     -webkit-filter: grayscale(100%);
     /* Chrome, Safari, Opera */
@@ -712,13 +709,16 @@ body {
     -moz-transition: all 1s;
     transition: all 1s; }
     .projects-wrapper .project-content .project .content {
-      display: none; }
+      display: none;
+      background: rgba(255, 255, 255, 0.9); }
     .projects-wrapper .project-content .project:hover {
       -webkit-filter: grayscale(0%);
       /* Chrome, Safari, Opera */
       filter: grayscale(0%); }
       .projects-wrapper .project-content .project:hover .content {
-        display: block; }
+        border-radius: .5em;
+        display: block;
+        width: 80%; }
   .projects-wrapper .project-content .project.piro {
     background-image: url("../images/piro.png"); }
   .projects-wrapper .project-content .project.takapau {

@@ -16,12 +16,9 @@ class About extends Component {
           </div>
 
           <div className='my-journey'>
-            <h4>My journey so far</h4>
+            <h4>Phase 1</h4>
             <p>
-              I enjoy creating things that help solve day-to-day problems and things that are used as learning resources.
-            </p>
-            <p>
-              I challenged myself to follow that passion and pursue a career in Web Development.  As a result, I am a recent graduate from Enspiral Dev Academy who wants to learn as much as I can.
+              I enjoy creating things that help solve day-to-day problems and things that are used as learning resources.  I challenged myself to follow that passion and pursue a career in Web Development.  As a result, I am a recent graduate of Enspiral Dev Academy and continuing my journey to learn.
             </p>
             <p>
             I am looking for my first web development role where I can continue to learn and use the skills I have to contribute to a great team.
