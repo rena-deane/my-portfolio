@@ -3,16 +3,22 @@
   height: 100vh;
   .project-content {
     .project {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       height: 100vh;
       @include grayscale(100%);
-      @include transition-all(1s)
+      @include transition-all(1s);
       .content {
         display: none;
+        background: rgba($white, .9)
       }
       &:hover {
         @include grayscale(0%);
         .content {
+          border-radius: .5em;
           display: block;
+          width: 80%;
         }
       }
     }

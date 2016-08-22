@@ -5,10 +5,10 @@
 }
 
 @mixin home-background() {
-  background: #d36301; /* Old browsers */
-  background: -moz-linear-gradient(top, #d36301 0%, #e8b400 15%);
-  background: -webkit-linear-gradient(top, #d36301 0%,#e8b400 15%);
-  background: linear-gradient(to bottom, #d36301 0%,#e8b400 15%);
+  background: #ffd34e; /* Old browsers */
+  background: -moz-linear-gradient(top, #ffd34e 0%, #fffad5 30%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffd34e 0%, #fffad5 30%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffd34e 0%, #fffad5 30%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 @mixin grayscale($gray) {

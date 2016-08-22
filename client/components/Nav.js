@@ -24,7 +24,7 @@ class Navigation extends Component {
   handleScroll () {
     let body = document.getElementsByTagName('body')[0]
     let navbar = document.getElementsByClassName('navbar')[0]
-    if (body.scrollTop > 600) {
+    if (body.scrollTop > 400) {
       return navbar.classList.add('scroll')
     } else {
       return navbar.classList.remove('scroll')
@@ -48,8 +48,8 @@ class Navigation extends Component {
             <NavItem eventKey={2} href='#projects' className='list-link'>
               PROJECTS
             </NavItem>
-            <NavItem eventKey={3} href='#work' className='list-link'>
-              WORK
+            <NavItem eventKey={3} href='#resume' className='list-link'>
+              RESUME
             </NavItem>
             <NavItem eventKey={4} href='#connect' className='list-link connect'>
               CONNECT

@@ -1,5 +1,4 @@
 .content-wrapper {
-  padding: 1.5em 0;
   .column {
     margin-left: 0;
   }
@@ -8,4 +7,38 @@
 .about-wrapper {
   width: 100%;
   height: 100vh;
+  .about {
+    background: $deep-green;
+    height: 100vh;
+  }
+  .about-me {
+    background: $white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .pepeha {
+      margin: 7em 0 1em 0;
+    }
+    h3 {
+      font-family: 'Lobster', cursive;
+      margin: .5em 0;
+      letter-spacing: .25px;
+      text-align: center;
+    }
+    .my-journey {
+      line-height: 1.75em;
+      width: 80%;
+      text-align:justify;
+      text-justify:distribute;
+      p {
+        font-size: 1.15em;
+        margin: 1.5em 0;
+      }
+    }
+    h4 {
+      font-weight: 600;
+      margin: 1.5em 0;
+    }
+  }
 }

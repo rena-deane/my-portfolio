@@ -1,19 +1,25 @@
 body {
-  @include home-background()
+  background-color: $scroll-nav;
 }
 
 .content-wrapper.home {
+  display: none;
+  background-image: url('../../public/images/waiapu-valley.jpg');
+  background-size: cover;
+  background-position: center;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+}
+
+.home-wrapper {
+  width: 100%;
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-  body {
-    @include home-background()
-  }
   .content-wrapper.home {
     height: 100vh;
   }
