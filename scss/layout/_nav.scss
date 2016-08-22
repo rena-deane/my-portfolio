@@ -1,9 +1,11 @@
 /* Overide react-bootstrap nav border backgrounds */
 .navbar-default {
-  background-color: $scroll-nav;
+  background-color: rgba($white, .7);
   border: 0;
+  @include transition-all(2s);
   & > div {
-    background-color: $scroll-nav;
+    @include transition-all(2s);
+    background-color: none;
   }
   a.navbar-brand {
     color: $nav-link;
@@ -18,6 +20,15 @@
   a:hover, a:active, a:visited {
     -webkit-color: $nav-link;
     color: $nav-link;
+  }
+}
+
+@keyframes fadenav {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
@@ -72,7 +83,7 @@
   }
 
   .navbar-default.scroll {
-    background-color: rgba($scroll-nav, .95);
+    background-color: rgba($white, .95);
     display: flex;
     align-items: center;
     height: 3.5em;
