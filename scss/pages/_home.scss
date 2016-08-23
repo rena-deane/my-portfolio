@@ -1,12 +1,9 @@
-body {
-  background-color: $scroll-nav;
-}
-
 .content-wrapper.home {
   display: none;
   background-image: url('../../public/images/waiapu-valley.jpg');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 100vh;
   display: flex;
   align-items: center;

@@ -565,7 +565,7 @@ body {
 /* colors */
 /* Overide react-bootstrap nav border backgrounds */
 .navbar-default {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(252, 255, 245, 0.7);
   border: 0;
   -webkit-transition: all 2s;
   -moz-transition: all 2s;
@@ -631,7 +631,7 @@ body {
       font-size: 1.15em;
       margin-left: 1.25em; }
   .navbar-default.scroll {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(252, 255, 245, 0.95);
     display: flex;
     align-items: center;
     height: 3.5em; }
@@ -650,14 +650,12 @@ body {
       color: #ffffff;
       background-color: #105B63; } }
 
-body {
-  background-color: #fffad5; }
-
 .content-wrapper.home {
   display: none;
   background-image: url("../../public/images/waiapu-valley.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -679,32 +677,13 @@ body {
   width: 100%;
   height: 100vh; }
   .about-wrapper .about {
-    background: #105B63;
     height: 100vh; }
-  .about-wrapper .about-me {
-    background: #ffffff;
-    height: 100vh;
+
+@media (min-width: 768px) {
+  .about-wrapper {
     display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .about-wrapper .about-me .pepeha {
-      margin: 7em 0 1em 0; }
-    .about-wrapper .about-me h3 {
-      font-family: 'Lobster', cursive;
-      margin: .5em 0;
-      letter-spacing: .25px;
-      text-align: center; }
-    .about-wrapper .about-me .my-journey {
-      line-height: 1.75em;
-      width: 80%;
-      text-align: justify;
-      text-justify: distribute; }
-      .about-wrapper .about-me .my-journey p {
-        font-size: 1.15em;
-        margin: 1.5em 0; }
-    .about-wrapper .about-me h4 {
-      font-weight: 600;
-      margin: 1.5em 0; }
+    flex-direction: row;
+    justify-content: space-between; } }
 
 .projects-wrapper {
   width: 100%;
