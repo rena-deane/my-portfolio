@@ -1,6 +1,6 @@
 /* Overide react-bootstrap nav border backgrounds */
 .navbar-default {
-  background-color: rgba($white, .7);
+  background-color: rgba($white-green, .7);
   border: 0;
   @include transition-all(2s);
   & > div {
@@ -50,7 +50,7 @@
 
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba($white, 0.5);
 }
 
 .navbar-collapse.collapse.in {
@@ -83,7 +83,7 @@
   }
 
   .navbar-default.scroll {
-    background-color: rgba($white, .95);
+    background-color: rgba($white-green, .95);
     display: flex;
     align-items: center;
     height: 3.5em;

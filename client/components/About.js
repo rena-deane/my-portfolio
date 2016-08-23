@@ -4,17 +4,18 @@ class About extends Component {
   render () {
     return (
       <div className='about-wrapper'>
-        <div className='about one-half column'>
-
-        </div>
-
-        <div className='about-me one-half column'>
+        <div className='about origin one-third column'>
           <div className='pepeha'>
             <h3>Ko Hikurangi te maunga,</h3>
             <h3>Ko Waiapu te awa,</h3>
             <h3>Ko Ngati Porou te iwi</h3>
           </div>
+          <div className='google-map'>
+            <p>Google Map here</p>
+          </div>
+        </div>
 
+        <div className='about journey one-third column'>
           <div className='my-journey'>
             <h4>Phase 1</h4>
             <p>
@@ -28,6 +29,11 @@ class About extends Component {
             </p>
           </div>
         </div>
+
+        <div className='about future one-third column'>
+          <p>more talk here</p>
+        </div>
+
       </div>
     )
   }
