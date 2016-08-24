@@ -1,6 +1,6 @@
 /* Overide react-bootstrap nav border backgrounds */
 .navbar-default {
-  background-color: rgba($white-green, .7);
+  background-color: rgba($sky-misty-blue, .7);
   border: 0;
   @include transition-all(2s);
   & > div {
@@ -8,18 +8,18 @@
     background-color: none;
   }
   a.navbar-brand {
-    color: $nav-link;
+    color: $white;
     font-family: 'Lobster', cursive;
     letter-spacing: .5px;
   }
   .navbar-nav li {
     a {
-      color: $nav-link;
+      color: $white;
     }
   }
   a:hover, a:active, a:visited {
-    -webkit-color: $nav-link;
-    color: $nav-link;
+    -webkit-color: $white;
+    color: $white;
   }
 }
 
@@ -37,7 +37,7 @@
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: $nav-link;
+    background-color: $white;
 }
 
 .navbar-collapse {
@@ -70,10 +70,10 @@
       }
     }
     a.navbar-brand {
-      color: $nav-link;
+      color: $white;
       font-size: 2em;
       &:hover, &:active {
-        color: $nav-link;
+        color: $white;
       }
     }
     .navbar-nav li a {
@@ -83,7 +83,7 @@
   }
 
   .navbar-default.scroll {
-    background-color: rgba($white-green, .95);
+    background-color: rgba($sky-misty-blue, .95);
     display: flex;
     align-items: center;
     height: 3.5em;
@@ -100,12 +100,12 @@
   }
 
   li.list-link.connect a {
-    border: 2px solid $nav-link;
+    border: 2px solid $white;
     background-color: none;
     transition: background-color .5s;
     &:hover {
       color: $white;
-      background-color: $nav-link;
+      background-color: $white;
     }
   }
 
