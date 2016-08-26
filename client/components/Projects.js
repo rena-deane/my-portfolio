@@ -8,7 +8,7 @@ class Projects extends Component {
 
         <div className='project-content'>
 
-          <div className='project piro one-half column'>
+          <div className='project piro col-xs-6'>
             <div className='content'>
               <h3>PIRO - Live Scoring</h3>
               <p>
@@ -20,7 +20,7 @@ class Projects extends Component {
             </div>
           </div>
 
-          <div className='project takapau one-half column'>
+          <div className='project takapau col-xs-6'>
             <div className='content'>
               <h3>Te Takapau-a-Maui: Virtual Tour (WIP)</h3>
               <p>

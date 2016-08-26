@@ -10,7 +10,7 @@
     "dist": "mkdir -p dist && bash -c 'cp *.{js,html,css} dist'",
     "push": "gh-pages -d dist",
     "deploy": "npm run build && npm run dist && npm run push",
-    "build-css": "node-sass --include-path ./node_modules/bootstrap-sass/assets/stylesheets/scss --include-path scss/main.scss   public/css/main.css",
+    "build-css": "node-sass --include-path scss scss/main.scss   public/css/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
     "lint": "standard --fix"
   },
