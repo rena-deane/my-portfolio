@@ -4,7 +4,7 @@ class About extends Component {
   render () {
     return (
       <div className='about-wrapper'>
-        <div className='about origin one-third column'>
+        <div className='about origin col-xs-4'>
           <div className='pepeha'>
             <h3>Ko Hikurangi te maunga,</h3>
             <h3>Ko Waiapu te awa,</h3>
@@ -15,7 +15,7 @@ class About extends Component {
           </div>
         </div>
 
-        <div className='about journey one-third column'>
+        <div className='about journey col-xs-8'>
           <div className='my-journey'>
             <h4>Phase 1</h4>
             <p>
@@ -28,10 +28,6 @@ class About extends Component {
             I believe in the saying, “When you learn, teach“.  I hope one day that I’ll be able to teach and introduce programming to rural communities around the country starting with my beloved East Coast.
             </p>
           </div>
-        </div>
-
-        <div className='about future one-third column'>
-          <p>more talk here</p>
         </div>
 
       </div>

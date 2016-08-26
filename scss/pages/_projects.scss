@@ -22,29 +22,9 @@
         }
       }
     }
-    .project.piro {
-      background-image: url('../images/piro.png');
-    }
-    .project.takapau {
-      background-image: url('../images/takapau.png');
-      background-position: center;
-    }
   }
 }
 
 @media (min-width: 768px) {
-  .projects-wrapper {
-    width: 100%;
-    height: 100vh;
-    .project-content {
-      .project.piro {
-        background-image: url('../images/piro.png');
-        background-size: cover;
-      }
-      .project.takapau {
-        background-image: url('../images/takapau.png');
-        background-size: cover;
-      }
-    }
-  }
+
 }

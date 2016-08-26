@@ -11,6 +11,24 @@
   width: 100%;
 }
 
+.quote-wrapper {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  align-contents: center;
+  .quote {
+    color: $white;
+    font-family: $Amatic;
+    padding: 0 1em;
+    text-align: center;
+  }
+}
+
+.quote.pakeha {
+  font-size: 1.5em;
+}
+
 .home-wrapper {
   width: 100%;
 }
@@ -20,4 +38,13 @@
   .content-wrapper.home {
     height: 100vh;
   }
+}
+
+@media (min-width: 768px) {
+  .quote.maori {
+    font-size: 4em;
+  }
+  .quote.pakeha {
+  font-size: 2em;
+}
 }
