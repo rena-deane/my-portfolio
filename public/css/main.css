@@ -6338,7 +6338,7 @@ body {
       font-size: 1.15em;
       margin-left: 1.25em; }
   .navbar-default.scroll {
-    background-color: rgba(165, 182, 205, 0.95);
+    background-color: rgba(165, 182, 205, 0.75);
     display: flex;
     align-items: center;
     height: 3.5em; }
@@ -6406,6 +6406,40 @@ body {
   height: 100vh; }
   .about-wrapper .about {
     height: 100vh; }
+
+.origin {
+  background-image: url("../images/hinepare.png");
+  background-size: contain;
+  background-attachment: fixed; }
+
+.journey {
+  overflow: auto; }
+
+.pepeha {
+  margin-top: 5em; }
+  .pepeha h3 {
+    font-family: "Amatic SC", cursive;
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    text-align: center;
+    color: #334c5e; }
+
+.aboutme {
+  margin-bottom: 1em; }
+
+.about-headings {
+  font-family: "Amatic SC", cursive;
+  font-size: 2em;
+  font-weight: bolder;
+  margin-bottom: 1em;
+  text-align: left; }
+
+.about-content {
+  line-height: 2em;
+  font-size: 1.15em;
+  text-align: justify;
+  margin-bottom: 1em; }
 
 @media (min-width: 768px) {
   .about-wrapper {
