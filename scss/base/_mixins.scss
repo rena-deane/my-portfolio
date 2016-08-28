@@ -15,3 +15,18 @@
     -webkit-filter: grayscale($gray); /* Chrome, Safari, Opera */
     filter: grayscale($gray);
 }
+
+@mixin font-feature($fontsize, $fontweight, $marginbottom, $textalign) {
+    font-family: "Amatic SC", cursive;
+    font-size: $fontsize;
+    font-weight: $fontweight;
+    margin-bottom: $marginbottom;
+    text-align: $textalign;
+}
+
+@mixin content($lineheight, $fontsize, $textalign) {
+  line-height: $lineheight;
+  font-size: $fontsize;
+  text-align: $textalign;
+  margin-bottom: 1em;
+}

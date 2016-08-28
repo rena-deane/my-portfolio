@@ -12,6 +12,37 @@
   }
 }
 
+.origin {
+  background-image: url('../images/hinepare.png');
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.journey {
+  overflow: auto;
+}
+
+.pepeha {
+  margin-top: 5em;
+  h3 {
+    @include font-feature(2.5em, 600, .5em, center);
+    color: $grey-blue;
+
+  }
+}
+
+.aboutme {
+  margin-bottom: 1em;
+}
+
+.about-headings {
+  @include font-feature(2em, bolder, 1em, left);
+}
+
+.about-content {
+  @include content(2em, 1.15em, justify);
+}
+
 @media (min-width: 768px) {
   .about-wrapper {
     display: flex;
