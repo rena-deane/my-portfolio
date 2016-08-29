@@ -4,24 +4,23 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  .project-content {
-    .project {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      @include grayscale(100%);
-      @include transition-all(1s);
-      .content {
-        display: none;
-        background: rgba($white, .9)
-      }
-    }
+  .projects {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
   }
 }
 
 @media (min-width: 768px) {
   .projects-wrapper {
     @include content-background(cover, fixed, no-repeat, center);
+    .projects {
+      flex-direction: row;
+      justify-content: space-around;
+    }
   }
 }

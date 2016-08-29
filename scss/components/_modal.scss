@@ -16,8 +16,12 @@
   margin: 1em 0;
 }
 
+.project-modals {
+  margin: 1em 0;
+}
+
 .btn {
-  @include modal-btn (1.5em, 7.5em, 7.5em)
+  @include modal-btn (1.5em, 7.5em, 3em)
   @include transition-all(1.5s)
   &:hover, &:visited, &:active, &:focus, &:focus:hover, &:link {
     background-color: $grey-blue;
