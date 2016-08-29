@@ -6400,11 +6400,13 @@ body {
   -webkit-transition: all 1.5s;
   -moz-transition: all 1.5s;
   transition: all 1.5s; }
-  .btn:hover, .btn:visited, .btn:active, .btn:focus, .btn:focus:hover, .btn:link {
+  .btn:hover, .btn:visited, .btn:active, .btn:link {
     background-color: #334c5e;
     width: 10em;
     height: 10em;
     font-weight: lighter; }
+  .btn:focus, .btn:focus:hover {
+    background-color: #334c5e; }
 
 @media (min-width: 480px) {
   .btn {
@@ -6535,7 +6537,7 @@ body {
   line-height: 2em;
   font-size: 1em;
   text-align: justify;
-  margin-bottom: 1.75em; }
+  margin-bottom: 1em; }
 
 @media (min-width: 768px) {
   .about-wrapper {
@@ -6561,7 +6563,7 @@ body {
     line-height: 2em;
     font-size: 1.15em;
     text-align: justify;
-    margin-bottom: 1.75em; } }
+    margin-bottom: 1em; } }
 
 .projects-wrapper {
   background-image: url("../images/projects.jpg");
@@ -6582,7 +6584,11 @@ body {
     padding: 0; }
 
 .content-list {
-  margin-left: 2em; }
+  margin-left: 2em;
+  line-height: 2em;
+  font-size: 1em;
+  text-align: justify;
+  margin-bottom: 1em; }
   .content-list li {
     list-style: initial; }
 
@@ -6590,7 +6596,7 @@ body {
   line-height: 2em;
   font-size: 1em;
   text-align: justify;
-  margin-bottom: 1.75em; }
+  margin-bottom: 1em; }
 
 @media (min-width: 768px) {
   .projects-wrapper {

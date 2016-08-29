@@ -17,6 +17,7 @@
 
 .content-list {
   margin-left: 2em;
+  @include content(2em, 1em, justify);
   li {
     list-style: initial;
   }

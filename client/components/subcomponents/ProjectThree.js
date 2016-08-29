@@ -40,7 +40,13 @@ class ProjectThree extends Component {
           </Modal.Header>
           <Modal.Body>
             <p className='project-content'>
-              What is AuthMe?
+              <a href='https://github.com/rena-deane/group-project-auth'>GitHub Source</a> for AuthMe
+            </p>
+            <p className='project-content'>
+              For a group project we created a template for using PASSPORT to create a login page.  It is yet to be deployed but the <a href='https://github.com/rena-deane/group-project-auth'>source code</a> can be viewed on <a href='https://github.com/rena-deane/group-project-auth'>GitHub</a>.  This was us scrapping the Authentication surface.
+            </p>
+            <p className='project-content'>
+              <strong>Creepy Crawly:</strong> At the moment you can register a username that already exists.
             </p>
           </Modal.Body>
         </Modal>
