@@ -20,8 +20,9 @@ A place to show the projects I've worked on and my journey in to Web Development
 - Browserify
 
 ## Refactor
-- Customise logo
-- Sass
-- Webpack
-- SQLite
+- [ ] Customise logo
+- [X] Sass
+- [ ] Webpack
+- [ ] Firebase
   - Store resume details in Database => if I update my resume in the database it would render
+  - Quotes => generate random quotes from database
