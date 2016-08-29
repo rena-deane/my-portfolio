@@ -1,12 +1,11 @@
 .content-wrapper.home {
   display: none;
-  background-image: url('../../public/images/waiapu-valley.jpg');
+  background-image: url('../../public/images/waiapu-valley-1.jpg');
   @include content-background(cover, fixed, no-repeat, center)
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
 }
 
 .quote-wrapper {

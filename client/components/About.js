@@ -5,20 +5,17 @@ import Journey from './subcomponents/Journey'
 import SubNav from './subcomponents/SubNav'
 
 class About extends Component {
+
   render () {
     return (
       <div className='about-wrapper'>
-        <div className='about origin col-xs-12 col-lg-6'>
-          <SubNav />
+        <h3 className='current-page'>About</h3>
+        <div className='about journey'>
+            <AboutMe />
+            <Journey />
+            <TechMe />
         </div>
 
-        <div className='about journey col-xs-12 col-lg-6'>
-
-          <AboutMe />
-          <Journey />
-          <TechMe />
-
-        </div>
       </div>
     )
   }
