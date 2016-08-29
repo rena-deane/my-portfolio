@@ -3,9 +3,9 @@
 A place to show the projects I've worked on and my journey in to Web Development.
 
 ## Pages
-- [ ] Home
-- [ ] About (Journey to Web Development)
-- [ ] Projects (Web and others)
+- [X] Home
+- [X] About (Journey to Web Development)
+- [X] Projects (Web and others)
 - [ ] Work
 - [ ] Contact
 
