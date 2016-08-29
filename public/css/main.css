@@ -6375,6 +6375,14 @@ body {
     height: 4em;
   } */ }
 
+.modal-dialog {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  align-content: center; }
+  .modal-dialog h4 {
+    margin-bottom: 0; }
+
 .content-wrapper.home {
   display: none;
   background-image: url("../../public/images/waiapu-valley.jpg");
@@ -6457,7 +6465,7 @@ body {
   line-height: 2em;
   font-size: 1em;
   text-align: justify;
-  margin-bottom: 1em; }
+  margin-bottom: 1.75em; }
 
 @media (min-width: 768px) {
   .about-wrapper {
@@ -6488,7 +6496,7 @@ body {
     line-height: 2em;
     font-size: 1.15em;
     text-align: justify;
-    margin-bottom: 1em; } }
+    margin-bottom: 1.75em; } }
 
 .projects-wrapper {
   width: 100%;
