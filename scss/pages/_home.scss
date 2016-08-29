@@ -1,9 +1,7 @@
 .content-wrapper.home {
   display: none;
   background-image: url('../../public/images/waiapu-valley.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  @include content-background(cover, fixed, no-repeat, center)
   height: 100vh;
   display: flex;
   align-items: center;
@@ -20,7 +18,7 @@
   .quote {
     color: $white;
     font-family: $Amatic;
-    padding: 0 1em;
+    padding: 0 .5em;
     text-align: center;
   }
 }

@@ -13,9 +13,9 @@
 }
 
 .origin {
-  background-image: url('../images/hinepare.png');
-  background-size: contain;
-  background-attachment: fixed;
+  background-image: url('../images/hinepare-small.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .journey {
@@ -48,5 +48,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+  .origin {
+    background-image: url('../images/hinepare-large.png');
+    @include content-background(contain, fixed, no-repeat, left center);
   }
 }

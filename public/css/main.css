@@ -6379,8 +6379,9 @@ body {
   display: none;
   background-image: url("../../public/images/waiapu-valley.jpg");
   background-size: cover;
-  background-position: center;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -6396,7 +6397,7 @@ body {
   .quote-wrapper .quote {
     color: #ffffff;
     font-family: "Amatic SC", cursive;
-    padding: 0 1em;
+    padding: 0 .5em;
     text-align: center; }
 
 .quote.pakeha {
@@ -6426,9 +6427,9 @@ body {
     height: 100vh; }
 
 .origin {
-  background-image: url("../images/hinepare.png");
-  background-size: contain;
-  background-attachment: fixed; }
+  background-image: url("../images/hinepare-small.png");
+  background-size: cover;
+  background-position: center; }
 
 .journey {
   overflow: auto; }
@@ -6463,7 +6464,13 @@ body {
   .about-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; } }
+    justify-content: space-between; }
+  .origin {
+    background-image: url("../images/hinepare-large.png");
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: left center; } }
 
 .projects-wrapper {
   width: 100%;

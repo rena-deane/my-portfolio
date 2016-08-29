@@ -5,7 +5,7 @@ class About extends Component {
     return (
       <div className='about-wrapper'>
         <div className='about origin col-xs-12 col-lg-6'>
-          <h2>ABOUT</h2>
+
         </div>
 
         <div className='about journey col-xs-12 col-lg-6'>
