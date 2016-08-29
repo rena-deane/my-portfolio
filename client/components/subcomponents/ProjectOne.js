@@ -39,9 +39,29 @@ class ProjectOne extends Component {
             <Modal.Title className='about-headings'>Te Takapau a Maui</Modal.Title>
           </Modal.Header>
           <Modal.Body>
+
             <p className='project-content'>
-              Hikurangi carving virtual tour
+              The intention behind this project was use ReactJS and ThreeJS to create a virtual tour of the carvings that sit on top of Hikurangi maunga on the East Coast of the North Island, New Zealand.
             </p>
+
+            <p className='project-content'>
+              I intend to continue on this project to apply and learn more technologies such as
+              <ul className='content-list'>
+                <li>Redux</li>
+                <li>ReduxThunk</li>
+                <li>ImmutableJS</li>
+                <li>BabylonJS</li>
+                <li>ThreeJS</li>
+                <li>ReactMotion</li>
+                <li>PostGIS</li>
+                <li>and many more...</li>
+              </ul>
+            </p>
+
+            <p className='project-content'>
+              View the work in progress <a href='https://rena-deane.github.io/hikurangi-takapau'>here</a>
+            </p>
+
           </Modal.Body>
         </Modal>
       </div>

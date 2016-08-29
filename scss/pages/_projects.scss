@@ -15,6 +15,17 @@
   }
 }
 
+.content-list {
+  margin-left: 2em;
+  li {
+    list-style: initial;
+  }
+}
+
+.project-content {
+  @include content(2em, 1em, justify);
+}
+
 @media (min-width: 768px) {
   .projects-wrapper {
     @include content-background(cover, fixed, no-repeat, center);
