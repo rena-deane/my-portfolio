@@ -36,18 +36,18 @@ class AboutMe extends Component {
     )
 
     return (
-      <div>
+      <div className='about-modals'>
         <Button
           bsStyle="primary"
           bsSize="large"
           onClick={this.open.bind(this)}
         >
-          Hangarau / Technology
+          Wero / Challenge
         </Button>
 
         <Modal show={this.state.showModal} onHide={this.close.bind(this)}>
           <Modal.Header closeButton>
-            <Modal.Title className='about-headings'>Hangarau / Technology</Modal.Title>
+            <Modal.Title className='about-headings'>Wero / Challenge</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <p className='about-content'>

@@ -6272,7 +6272,7 @@ body {
 /* fonts */
 /* Overide react-bootstrap nav border backgrounds */
 .navbar-default {
-  background-color: rgba(165, 182, 205, 0.7);
+  background-color: #a5b6cd;
   border: 0;
   -webkit-transition: all 2s;
   -moz-transition: all 2s;
@@ -6291,12 +6291,6 @@ body {
   .navbar-default a:hover, .navbar-default a:active, .navbar-default a:visited {
     -webkit-color: #ffffff;
     color: #ffffff; }
-
-@keyframes fadenav {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
 
 .navbar-toggle {
   border: 0; }
@@ -6376,16 +6370,76 @@ body {
   } */ }
 
 .modal-dialog {
-  height: 100vh;
   display: flex;
   align-items: center;
   align-content: center; }
   .modal-dialog h4 {
     margin-bottom: 0; }
 
+.modal-content {
+  width: 100%; }
+
+.about-modals {
+  margin: 1em 0; }
+
+.btn {
+  font-family: "Amatic SC", cursive;
+  background: none;
+  background-color: #a5b6cd;
+  border: 0;
+  color: #ffffff;
+  font-size: 1.5em;
+  font-weight: bolder;
+  width: 7.5em;
+  height: 7.5em;
+  -webkit-transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  transition: all 1.5s; }
+  .btn:hover, .btn:visited, .btn:active, .btn:focus, .btn:focus:hover, .btn:link {
+    background-color: #334c5e;
+    width: 10em;
+    height: 10em;
+    font-weight: lighter; }
+
+@media (min-width: 480px) {
+  .btn {
+    font-size: 1.5em; } }
+
+@media (min-width: 768px) {
+  .btn {
+    font-size: 2em;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    transition: all 1.5s; }
+    .btn:hover, .btn:visited, .btn:active, .btn:focus, .btn:focus:hover, .btn:link {
+      font-size: 1.75em; } }
+
+@media only screen and (min-width: 992px) {
+  .btn {
+    font-size: 2.25em;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    transition: all 1.5s; }
+    .btn:hover, .btn:visited, .btn:active, .btn:focus, .btn:focus:hover, .btn:link {
+      font-size: 2em; } }
+
+.subnav {
+  display: none;
+  width: 90%; }
+
+.subnav-links {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: flex-end;
+  font-size: 1.75em; }
+
+.subnav.show {
+  display: block; }
+
 .content-wrapper.home {
   display: none;
-  background-image: url("../../public/images/waiapu-valley.jpg");
+  background-image: url("../../public/images/waiapu-valley-1.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -6393,8 +6447,7 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%; }
+  justify-content: center; }
 
 .quote-wrapper {
   display: flex;
@@ -6425,21 +6478,36 @@ body {
   .quote.pakeha {
     font-size: 2em; } }
 
-.content-wrapper .column {
-  margin-left: 0; }
-
-.about-wrapper {
+.abouts {
   width: 100%;
-  height: 100vh; }
-  .about-wrapper .about {
-    height: 100vh; }
-
-.origin {
-  background-image: url("../images/hinepare-small.png");
+  height: 100vh;
+  background-image: url("../images/hinepare-small.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center; }
+  .abouts .about-wrapper {
+    position: relative; }
+  .abouts .about {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0; }
+
+.current-page {
+  font-family: "Amatic SC", cursive;
+  font-size: 1.75em;
+  font-weight: lighter;
+  margin-bottom: 0;
+  text-align: right;
+  position: absolute;
+  top: .75em;
+  z-index: 1;
+  width: 95%;
+  color: #a5b6cd; }
 
 .pepeha {
   margin: 3em 0; }
@@ -6449,10 +6517,7 @@ body {
     font-weight: 600;
     margin-bottom: 0.5em;
     text-align: center;
-    color: #334c5e; }
-
-.aboutme {
-  margin-bottom: 1em; }
+    color: #b25757; }
 
 .about-headings {
   font-family: "Amatic SC", cursive;
@@ -6469,9 +6534,10 @@ body {
 
 @media (min-width: 768px) {
   .about-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
+    background-image: url("../images/hinepare-large.jpg"); }
+    .about-wrapper .about {
+      flex-direction: row;
+      justify-content: space-around; }
   .pepeha {
     margin: 5em 0; }
     .pepeha h3 {
@@ -6480,12 +6546,6 @@ body {
       font-weight: 600;
       margin-bottom: 0.5em;
       text-align: center; }
-  .origin {
-    background-image: url("../images/hinepare-large.png");
-    background-size: contain;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: left center; }
   .about-headings {
     font-family: "Amatic SC", cursive;
     font-size: 2em;
@@ -6499,6 +6559,12 @@ body {
     margin-bottom: 1.75em; } }
 
 .projects-wrapper {
+  background-image: url("../images/projects.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
   width: 100%;
   height: 100vh; }
   .projects-wrapper .project-content .project {
@@ -6515,14 +6581,13 @@ body {
     .projects-wrapper .project-content .project .content {
       display: none;
       background: rgba(255, 255, 255, 0.9); }
-    .projects-wrapper .project-content .project:hover {
-      -webkit-filter: grayscale(0%);
-      /* Chrome, Safari, Opera */
-      filter: grayscale(0%); }
-      .projects-wrapper .project-content .project:hover .content {
-        border-radius: .5em;
-        display: block;
-        width: 80%; }
+
+@media (min-width: 768px) {
+  .projects-wrapper {
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center; } }
 
 .work-wrapper {
   height: 100vh; }

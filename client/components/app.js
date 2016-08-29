@@ -18,18 +18,18 @@ class App extends Component {
           <Home />
         </div>
         <a name='about'></a>
-        <div className='content-wrapper about'>
+        <div className='content-wrapper abouts'>
           <About />
         </div>
-        <div className='content-wrapper projects'>
-          <Projects />
-        </div>
         <a name='work'></a>
-        <div className='content-wrapper work'>
+        <div className='content-wrapper'>
           <Work />
         </div>
+        <div className='content-wrapper'>
+          <Projects />
+        </div>
         <a name='connect'></a>
-        <div className='content-wrapper connect'>
+        <div className='content-wrapper'>
           <Connect />
         </div>
       </div>

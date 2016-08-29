@@ -1,0 +1,16 @@
+.subnav {
+  display: none;
+  width: 90%;
+}
+.subnav-links {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: flex-end;
+  font-size: 1.75em;
+}
+
+.subnav.show {
+  display: block;
+}
+
