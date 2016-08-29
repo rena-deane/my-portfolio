@@ -14,20 +14,14 @@
 
 .origin {
   background-image: url('../images/hinepare-small.png');
-  background-size: cover;
-  background-position: center;
-}
-
-.journey {
-  overflow: auto;
+  @include content-background(cover, fixed, no-repeat, center);
 }
 
 .pepeha {
-  margin-top: 5em;
+  margin: 3em 0;
   h3 {
-    @include font-feature(2.5em, 600, .5em, center);
+    @include font-feature(2em, 600, .5em, center);
     color: $grey-blue;
-
   }
 }
 
@@ -36,11 +30,11 @@
 }
 
 .about-headings {
-  @include font-feature(2em, bolder, 1em, left);
+  @include font-feature(1.75em, bolder, 1em, left);
 }
 
 .about-content {
-  @include content(2em, 1.15em, justify);
+  @include content(2em, 1em, justify);
 }
 
 @media (min-width: 768px) {
@@ -49,8 +43,23 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  .pepeha {
+    margin: 5em 0;
+    h3 {
+      @include font-feature(2.5em, 600, .5em, center);
+    }
+  }
   .origin {
     background-image: url('../images/hinepare-large.png');
     @include content-background(contain, fixed, no-repeat, left center);
+  }
+
+  .about-headings {
+    @include font-feature(2em, bolder, 1em, left);
+  }
+
+  .about-content {
+    @include content(2em, 1.15em, justify);
   }
 }

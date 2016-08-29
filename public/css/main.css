@@ -6429,16 +6429,15 @@ body {
 .origin {
   background-image: url("../images/hinepare-small.png");
   background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-position: center; }
 
-.journey {
-  overflow: auto; }
-
 .pepeha {
-  margin-top: 5em; }
+  margin: 3em 0; }
   .pepeha h3 {
     font-family: "Amatic SC", cursive;
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 600;
     margin-bottom: 0.5em;
     text-align: center;
@@ -6449,14 +6448,14 @@ body {
 
 .about-headings {
   font-family: "Amatic SC", cursive;
-  font-size: 2em;
+  font-size: 1.75em;
   font-weight: bolder;
   margin-bottom: 1em;
   text-align: left; }
 
 .about-content {
   line-height: 2em;
-  font-size: 1.15em;
+  font-size: 1em;
   text-align: justify;
   margin-bottom: 1em; }
 
@@ -6465,12 +6464,31 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
+  .pepeha {
+    margin: 5em 0; }
+    .pepeha h3 {
+      font-family: "Amatic SC", cursive;
+      font-size: 2.5em;
+      font-weight: 600;
+      margin-bottom: 0.5em;
+      text-align: center; }
   .origin {
     background-image: url("../images/hinepare-large.png");
     background-size: contain;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: left center; } }
+    background-position: left center; }
+  .about-headings {
+    font-family: "Amatic SC", cursive;
+    font-size: 2em;
+    font-weight: bolder;
+    margin-bottom: 1em;
+    text-align: left; }
+  .about-content {
+    line-height: 2em;
+    font-size: 1.15em;
+    text-align: justify;
+    margin-bottom: 1em; } }
 
 .projects-wrapper {
   width: 100%;
