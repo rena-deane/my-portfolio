@@ -36,7 +36,7 @@ class AboutMe extends Component {
     )
 
     return (
-      <div>
+      <div className='about-modals'>
         <Button
           bsStyle="primary"
           bsSize="large"
@@ -50,17 +50,25 @@ class AboutMe extends Component {
             <Modal.Title className='about-headings'>Ko Au / About Me</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <p className='about-content'>
-              Born and bred on the East Coast of the North Island, Ruatoria and Rangitukia.
-            </p>
+            <div className='pepeha'>
+              <h3>Ko Hikurangi te maunga,</h3>
+              <h3>Ko Waiapu te awa,</h3>
+              <h3>Ko Ngati Porou te iwi</h3>
+            </div>
 
-            <p className='about-content'>
-              I was raised and immersed in a culturally strong environment where the traditions, practices and perspectives of my whanau, hapu and iwi were exercised daily.
-            </p>
+            <div className='aboutme'>
+              <p className='about-content'>
+                Born and bred on the East Coast of the North Island, Ruatoria and Rangitukia.
+              </p>
 
-            <p className='about-content'>
-              This cultural strength provides me with the confidence and competence to act, think and behave in ways that allow me to recognise and respect the distinctiveness of others.
-            </p>
+              <p className='about-content'>
+                I was raised and immersed in a culturally strong environment where the traditions, practices and perspectives of my whanau, hapu and iwi were exercised daily.
+              </p>
+
+              <p className='about-content'>
+                This cultural strength provides me with the confidence and competence to act, think and behave in ways that allow me to recognise and respect the distinctiveness of others.
+              </p>
+            </div>
 
             <h6>Coming soon ... map of the East Coast</h6>
           </Modal.Body>

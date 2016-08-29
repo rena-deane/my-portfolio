@@ -9,6 +9,12 @@
   height: 100vh;
   .about  {
     height: 100vh;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -21,12 +27,8 @@
   margin: 3em 0;
   h3 {
     @include font-feature(2em, 600, .5em, center);
-    color: $grey-blue;
+    color: $whakairo-red;
   }
-}
-
-.aboutme {
-  margin-bottom: 1em;
 }
 
 .about-headings {

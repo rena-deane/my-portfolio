@@ -37,3 +37,15 @@
   background-repeat: $repeat;
   background-position: $position;
 }
+
+@mixin modal-btn($fontsize, $width, $height) {
+  font-family: $Amatic;
+  background: none;
+  background-color: $whakairo-red;
+  border: 0;
+  color: $white;
+  font-size: $fontsize;
+  font-weight: bolder;
+  width: $width;
+  height: $height;
+}

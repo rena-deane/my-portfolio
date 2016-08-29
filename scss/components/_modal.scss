@@ -1,9 +1,31 @@
 .modal-dialog {
-  height: 100vh;
   display: flex;
   align-items: center;
   align-content: center;
+
   h4 {
     margin-bottom: 0;
   }
 }
+
+.modal-content {
+  width: 100%;
+}
+
+.about-modals {
+  margin: 1em 0;
+}
+
+.btn {
+  @include modal-btn (1.25em, 7.5em, 7.5em)
+  &:hover, &:visited, &:active, &:focus, &:focus:hover, &:link {
+    background-color: $whakairo-lightred;
+  }
+}
+
+@media (min-width: 480px) {
+  .btn{
+    @include modal-btn (1.5em, 7.5em, 7.5em)
+  }
+}
+

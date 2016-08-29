@@ -6376,12 +6376,42 @@ body {
   } */ }
 
 .modal-dialog {
-  height: 100vh;
   display: flex;
   align-items: center;
   align-content: center; }
   .modal-dialog h4 {
     margin-bottom: 0; }
+
+.modal-content {
+  width: 100%; }
+
+.about-modals {
+  margin: 1em 0; }
+
+.btn {
+  font-family: "Amatic SC", cursive;
+  background: none;
+  background-color: #b25757;
+  border: 0;
+  color: #ffffff;
+  font-size: 1.25em;
+  font-weight: bolder;
+  width: 7.5em;
+  height: 7.5em; }
+  .btn:hover, .btn:visited, .btn:active, .btn:focus, .btn:focus:hover, .btn:link {
+    background-color: #d67e7d; }
+
+@media (min-width: 480px) {
+  .btn {
+    font-family: "Amatic SC", cursive;
+    background: none;
+    background-color: #b25757;
+    border: 0;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: bolder;
+    width: 7.5em;
+    height: 7.5em; } }
 
 .content-wrapper.home {
   display: none;
@@ -6432,7 +6462,13 @@ body {
   width: 100%;
   height: 100vh; }
   .about-wrapper .about {
-    height: 100vh; }
+    height: 100vh;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center; }
 
 .origin {
   background-image: url("../images/hinepare-small.png");
@@ -6449,10 +6485,7 @@ body {
     font-weight: 600;
     margin-bottom: 0.5em;
     text-align: center;
-    color: #334c5e; }
-
-.aboutme {
-  margin-bottom: 1em; }
+    color: #b25757; }
 
 .about-headings {
   font-family: "Amatic SC", cursive;
