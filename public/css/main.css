@@ -6272,7 +6272,7 @@ body {
 /* fonts */
 /* Overide react-bootstrap nav border backgrounds */
 .navbar-default {
-  background-color: #a5b6cd;
+  background-color: rgba(165, 182, 205, 0.7);
   border: 0;
   -webkit-transition: all 2s;
   -moz-transition: all 2s;
@@ -6287,7 +6287,9 @@ body {
     font-family: 'Lobster', cursive;
     letter-spacing: .5px; }
   .navbar-default .navbar-nav li a {
-    color: #ffffff; }
+    font-family: "Amatic SC", cursive;
+    color: #ffffff;
+    font-size: 1.5em; }
   .navbar-default a:hover, .navbar-default a:active, .navbar-default a:visited {
     -webkit-color: #ffffff;
     color: #ffffff; }
@@ -6329,7 +6331,7 @@ body {
       .navbar-default a.navbar-brand:hover, .navbar-default a.navbar-brand:active {
         color: #ffffff; }
     .navbar-default .navbar-nav li a {
-      font-size: 1.15em;
+      font-size: 1.75em;
       margin-left: 1.25em; }
   /* Use if you want a fixed nav throughout site*/
   /*   .navbar-default.scroll {
@@ -6362,7 +6364,7 @@ body {
   .container {
     width: 85%; }
   .navbar-default .navbar-nav li a {
-    font-size: 1.25em;
+    font-size: 2em;
     font-weight: 100;
     margin-left: 1.75em; }
   /*   .navbar-default.scroll {
@@ -6382,6 +6384,9 @@ body {
 .about-modals {
   margin: 1em 0; }
 
+.project-modals {
+  margin: 1em 0; }
+
 .btn {
   font-family: "Amatic SC", cursive;
   background: none;
@@ -6391,15 +6396,17 @@ body {
   font-size: 1.5em;
   font-weight: bolder;
   width: 7.5em;
-  height: 7.5em;
+  height: 3em;
   -webkit-transition: all 1.5s;
   -moz-transition: all 1.5s;
   transition: all 1.5s; }
-  .btn:hover, .btn:visited, .btn:active, .btn:focus, .btn:focus:hover, .btn:link {
+  .btn:hover, .btn:visited, .btn:active, .btn:link {
     background-color: #334c5e;
     width: 10em;
     height: 10em;
     font-weight: lighter; }
+  .btn:focus, .btn:focus:hover {
+    background-color: #334c5e; }
 
 @media (min-width: 480px) {
   .btn {
@@ -6530,7 +6537,7 @@ body {
   line-height: 2em;
   font-size: 1em;
   text-align: justify;
-  margin-bottom: 1.75em; }
+  margin-bottom: 1em; }
 
 @media (min-width: 768px) {
   .about-wrapper {
@@ -6556,7 +6563,7 @@ body {
     line-height: 2em;
     font-size: 1.15em;
     text-align: justify;
-    margin-bottom: 1.75em; } }
+    margin-bottom: 1em; } }
 
 .projects-wrapper {
   background-image: url("../images/projects.jpg");
@@ -6567,27 +6574,39 @@ body {
   position: relative;
   width: 100%;
   height: 100vh; }
-  .projects-wrapper .project-content .project {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .projects-wrapper .projects {
     height: 100vh;
-    -webkit-filter: grayscale(100%);
-    /* Chrome, Safari, Opera */
-    filter: grayscale(100%);
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    transition: all 1s; }
-    .projects-wrapper .project-content .project .content {
-      display: none;
-      background: rgba(255, 255, 255, 0.9); }
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0; }
+
+.content-list {
+  margin-left: 2em;
+  line-height: 2em;
+  font-size: 1em;
+  text-align: justify;
+  margin-bottom: 1em; }
+  .content-list li {
+    list-style: initial; }
+
+.project-content {
+  line-height: 2em;
+  font-size: 1em;
+  text-align: justify;
+  margin-bottom: 1em; }
 
 @media (min-width: 768px) {
   .projects-wrapper {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center; } }
+    background-position: center; }
+    .projects-wrapper .projects {
+      flex-direction: row;
+      justify-content: space-around; } }
 
 .work-wrapper {
   height: 100vh; }
