@@ -6337,25 +6337,43 @@ body {
     .navbar-default .navbar-nav li a {
       font-size: 1.15em;
       margin-left: 1.25em; }
-  .navbar-default.scroll {
-    background-color: rgba(165, 182, 205, 0.75);
+  /* Use if you want a fixed nav throughout site*/
+  /*   .navbar-default.scroll {
+    background-color: rgba($sky-misty-blue, .75);
     display: flex;
     align-items: center;
-    height: 3.5em; }
-    .navbar-default.scroll .container {
-      margin: 0 auto; }
-      .navbar-default.scroll .container ul.nav {
+    height: 3.5em;
+    .container {
+      margin: 0 auto;
+      ul.nav {
         display: flex;
-        align-items: center; }
-      .navbar-default.scroll .container .connect a {
-        padding: 0.25em 0.75em; }
+        align-items: center;
+      }
+      .connect a {
+        padding: 0.25em 0.75em;
+      }
+    }
+  } */
+  .navbar-default.scroll {
+    display: none; }
   li.list-link.connect a {
     border: 2px solid #ffffff;
     background-color: none;
     transition: background-color .5s; }
     li.list-link.connect a:hover {
-      color: #ffffff;
+      color: #a5b6cd;
       background-color: #ffffff; } }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 85%; }
+  .navbar-default .navbar-nav li a {
+    font-size: 1.25em;
+    font-weight: 100;
+    margin-left: 1.75em; }
+  /*   .navbar-default.scroll {
+    height: 4em;
+  } */ }
 
 .content-wrapper.home {
   display: none;

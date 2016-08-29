@@ -10,6 +10,7 @@ class Navigation extends Component {
     }
   }
 
+//
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
     this.setState({
@@ -24,7 +25,7 @@ class Navigation extends Component {
   handleScroll () {
     let body = document.getElementsByTagName('body')[0]
     let navbar = document.getElementsByClassName('navbar')[0]
-    if (body.scrollTop > 500) {
+    if (body.scrollTop > 100) {
       return navbar.classList.add('scroll')
     } else {
       return navbar.classList.remove('scroll')
@@ -52,7 +53,7 @@ class Navigation extends Component {
               RESUME
             </NavItem>
             <NavItem eventKey={4} href='#connect' className='list-link connect'>
-              CONNECT
+              <span>CONNECT</span>
             </NavItem>
           </Nav>
         </Navbar.Collapse>

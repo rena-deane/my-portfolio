@@ -82,7 +82,8 @@
     }
   }
 
-  .navbar-default.scroll {
+/* Use if you want a fixed nav throughout site*/
+/*   .navbar-default.scroll {
     background-color: rgba($sky-misty-blue, .75);
     display: flex;
     align-items: center;
@@ -97,6 +98,10 @@
         padding: 0.25em 0.75em;
       }
     }
+  } */
+
+  .navbar-default.scroll {
+    display: none;
   }
 
   li.list-link.connect a {
@@ -104,9 +109,23 @@
     background-color: none;
     transition: background-color .5s;
     &:hover {
-      color: $white;
+      color: $sky-misty-blue;
       background-color: $white;
     }
   }
 
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 85%;
+  }
+  .navbar-default .navbar-nav li a {
+    font-size: 1.25em;
+    font-weight: 100;
+    margin-left: 1.75em;
+  }
+/*   .navbar-default.scroll {
+    height: 4em;
+  } */
 }
