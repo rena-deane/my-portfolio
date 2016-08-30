@@ -6445,7 +6445,7 @@ body {
 
 .content-wrapper.home {
   display: none;
-  background-image: url("../../public/images/waiapu-valley-1.jpg");
+  background-image: url("./images/waiapu-valley-1.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
