@@ -6620,8 +6620,37 @@ body {
       flex-direction: row;
       justify-content: space-around; } }
 
-.work-wrapper {
-  height: 100vh; }
+.resumes {
+  background-image: url("../images/resume-large.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .resumes .resume-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-end;
+    height: 100vh;
+    position: relative; }
+  .resumes .resume-tbc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    position: relative; }
+  .resumes .project-content {
+    color: #ffffff;
+    font-weight: lighter; }
+
+.wip {
+  color: #ffffff;
+  font-family: "Amatic SC", cursive;
+  font-size: 4em;
+  text-align: center;
+  margin: 0.25em 0; }
 
 .contactme {
   width: 100%;
@@ -6655,7 +6684,8 @@ body {
 .disclaimer-btn {
   background: 0;
   color: #a5b6cd;
-  font-weight: lighter; }
+  font-weight: lighter;
+  width: 10em; }
   .disclaimer-btn:hover {
     color: #ffffff; }
 
