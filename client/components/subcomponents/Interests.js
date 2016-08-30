@@ -50,12 +50,17 @@ class Interests extends Component {
             <Modal.Title className='about-headings'>Manawareka / My Jam</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <p className='about-content'>
-              I challenged myself to follow that passion and pursue a career in Web Development.  As a result, I am a highly motivated and enthusiastic graduate of Enspiral Dev Academy where I continue to learn everyday.  I am motivated by the opportunities technology can provide to our people. Especially those in rural areas.  Small towns can benefit from untilising various technologies such as mapping, e-tourism, e-commerce and accessible learning resources.
-            </p>
-            <p className='about-content'>
-            I believe in the saying, “When you learn, teach“.  When I feel like I’ve learnt all I can I hope one day I’ll be able to introduce and teach programming to rural communities around the country starting with my beloved East Coast.
-            </p>
+            <ul className='content-list'>
+              <li>Kapa Haka (professional Spectator)</li>
+              <li>Rugby Spectator</li>
+              <li>Amateurish Photography</li>
+              <li>Home Video Edits (Check out my <a href='https://vimeo.com/user7362145'>Vimeo</a> profile)</li>
+              <li>Adobeing things with Ps Ai Pr sometimes Au</li>
+              <li>Music</li>
+              <li>R & B Soul/Hip Hop & the 90s</li>
+              <li>Wannabe DIYer</li>
+              <li>There is more, I just cant think of any at the moment</li>
+            </ul>
           </Modal.Body>
         </Modal>
       </div>

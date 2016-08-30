@@ -6,10 +6,9 @@ class Connect extends Component {
   render () {
     return (
         <div className='connect-wrapper'>
-          <h3 className='current-page'>Connect</h3>
 
           <div className='quote-wrapper'>
-            <h1 className='quote maori'>“Kanohi ki te kanohi” </h1>
+            <h1 className='quote maori'>“Kanohi ki te kanohi? Close enough!” </h1>
           </div>
 
           <ul className='connect-links'>

@@ -42,7 +42,7 @@ class Journey extends Component {
           <Modal.Body>
 
             <p className='about-content'>
-              My journey
+              It has been a long windy one.  This could take a while!
             </p>
 
           </Modal.Body>
