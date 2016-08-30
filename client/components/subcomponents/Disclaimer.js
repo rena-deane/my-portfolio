@@ -27,14 +27,14 @@ class Disclaimer extends Component {
 
     return (
       <div className='disclaimer-modal'>
-        <span
+        <Button
           bsStyle="primary"
           bsSize="large"
           className='disclaimer-btn'
           onClick={this.open.bind(this)}
         >
           &copy; Rena-Deane. Not a lawyer.
-        </span>
+        </Button>
 
         <Modal show={this.state.showModal} onHide={this.close.bind(this)}>
           <Modal.Header closeButton>

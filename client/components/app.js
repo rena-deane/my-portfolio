@@ -21,8 +21,8 @@ class App extends Component {
         <div className='content-wrapper abouts'>
           <About />
         </div>
-        <a name='work'></a>
-        <div className='content-wrapper'>
+        <a name='resume'></a>
+        <div className='content-wrapper resumes'>
           <Work />
         </div>
         <div className='content-wrapper'>

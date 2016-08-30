@@ -1,3 +1,25 @@
-.work-wrapper {
-  height: 100vh;
+.resumes {
+  background-image: url('../images/resume-large.png');
+  @include content-background(cover, fixed, no-repeat, center);
+  .resume-wrapper {
+    @include flex-box (column, center, center, flex-end);
+    height: 100vh;
+    position: relative;
+  }
+  .resume-tbc {
+    @include flex-box (column, center, center, center);
+    position: relative;
+  }
+  .project-content {
+    color: $white;
+    font-weight: lighter;
+  }
+}
+
+.wip {
+  color: $white;
+  font-family: $Amatic;
+  font-size: 4em;
+  text-align: center;
+  margin: 0.25em 0;
 }
