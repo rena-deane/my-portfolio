@@ -6,8 +6,8 @@ A place to show the projects I've worked on and my journey in to Web Development
 - [X] Home
 - [X] About (Journey to Web Development)
 - [X] Projects (Web and others)
-- [ ] Work
-- [ ] Contact
+- [X] Work
+- [X] Contact
 
 ## Features
 - [ ] Search function
