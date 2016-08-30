@@ -29,7 +29,7 @@ class App extends Component {
           <Projects />
         </div>
         <a name='connect'></a>
-        <div className='content-wrapper'>
+        <div className='content-wrapper contactme'>
           <Connect />
         </div>
       </div>

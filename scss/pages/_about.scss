@@ -20,7 +20,7 @@
 .current-page {
   @include font-feature(1.75em, lighter, 0, right);
   position: absolute;
-  top: .75em;
+  top: 2.5em;
   z-index: 1;
   width: 95%;
   color: $sky-misty-blue;
@@ -30,7 +30,7 @@
   margin: 3em 0;
   h3 {
     @include font-feature(2em, 600, .5em, center);
-    color: $whakairo-red;
+    color: $grey-blue;
   }
 }
 
@@ -46,10 +46,15 @@
 
   .about-wrapper {
     background-image: url('../images/hinepare-large.jpg');
+    @include content-background(cover, fixed, no-repeat, left);
     .about  {
       flex-direction: row;
       justify-content: space-around;
     }
+  }
+
+  .current-page {
+    top: 1em;
   }
 
   .pepeha {

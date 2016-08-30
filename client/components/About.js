@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import AboutMe from './subcomponents/AboutMe'
-import TechMe from './subcomponents/TechMe'
+import Interests from './subcomponents/Interests'
 import Journey from './subcomponents/Journey'
 import SubNav from './subcomponents/SubNav'
 
@@ -13,7 +13,7 @@ class About extends Component {
         <div className='about journey'>
             <AboutMe />
             <Journey />
-            <TechMe />
+            <Interests />
         </div>
 
       </div>

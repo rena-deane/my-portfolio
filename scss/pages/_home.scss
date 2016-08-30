@@ -22,6 +22,10 @@
   }
 }
 
+.quote.maori {
+  font-size: 2em;
+}
+
 .quote.pakeha {
   font-size: 1.5em;
 }
@@ -35,6 +39,13 @@
   .content-wrapper.home {
     height: 100vh;
   }
+  .quote.maori {
+    font-size: 3em;
+  }
+
+  .quote.pakeha {
+    font-size: 2em;
+  }
 }
 
 @media (min-width: 768px) {
@@ -42,6 +53,6 @@
     font-size: 4em;
   }
   .quote.pakeha {
-    font-size: 2em;
+    font-size: 2.75em;
   }
 }

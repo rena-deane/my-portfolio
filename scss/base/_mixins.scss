@@ -38,6 +38,14 @@
   background-position: $position;
 }
 
+@mixin flex-box ($direction, $align-items, $align-content, $justify-content) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align-items;
+  align-content: $align-content;
+  justify-content: $justify-content;
+}
+
 @mixin modal-btn($fontsize, $width, $height) {
   font-family: $Amatic;
   background: none;
@@ -45,7 +53,6 @@
   border: 0;
   color: $white;
   font-size: $fontsize;
-  font-weight: bolder;
   width: $width;
   height: $height;
 }

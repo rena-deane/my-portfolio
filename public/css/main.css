@@ -6394,7 +6394,6 @@ body {
   border: 0;
   color: #ffffff;
   font-size: 1.5em;
-  font-weight: bolder;
   width: 7.5em;
   height: 3em;
   -webkit-transition: all 1.5s;
@@ -6403,8 +6402,7 @@ body {
   .btn:hover, .btn:visited, .btn:active, .btn:link {
     background-color: #334c5e;
     width: 10em;
-    height: 10em;
-    font-weight: lighter; }
+    height: 10em; }
   .btn:focus, .btn:focus:hover {
     background-color: #334c5e; }
 
@@ -6419,7 +6417,8 @@ body {
     -moz-transition: all 1.5s;
     transition: all 1.5s; }
     .btn:hover, .btn:visited, .btn:active, .btn:focus, .btn:focus:hover, .btn:link {
-      font-size: 1.75em; } }
+      font-size: 1.75em;
+      font-weight: lighter; } }
 
 @media only screen and (min-width: 992px) {
   .btn {
@@ -6468,6 +6467,9 @@ body {
     padding: 0 .5em;
     text-align: center; }
 
+.quote.maori {
+  font-size: 2em; }
+
 .quote.pakeha {
   font-size: 1.5em; }
 
@@ -6477,13 +6479,17 @@ body {
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
   .content-wrapper.home {
-    height: 100vh; } }
+    height: 100vh; }
+  .quote.maori {
+    font-size: 3em; }
+  .quote.pakeha {
+    font-size: 2em; } }
 
 @media (min-width: 768px) {
   .quote.maori {
     font-size: 4em; }
   .quote.pakeha {
-    font-size: 2em; } }
+    font-size: 2.75em; } }
 
 .abouts {
   width: 100%;
@@ -6511,7 +6517,7 @@ body {
   margin-bottom: 0;
   text-align: right;
   position: absolute;
-  top: .75em;
+  top: 2.5em;
   z-index: 1;
   width: 95%;
   color: #a5b6cd; }
@@ -6524,7 +6530,7 @@ body {
     font-weight: 600;
     margin-bottom: 0.5em;
     text-align: center;
-    color: #b25757; }
+    color: #334c5e; }
 
 .about-headings {
   font-family: "Amatic SC", cursive;
@@ -6541,10 +6547,16 @@ body {
 
 @media (min-width: 768px) {
   .about-wrapper {
-    background-image: url("../images/hinepare-large.jpg"); }
+    background-image: url("../images/hinepare-large.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: left; }
     .about-wrapper .about {
       flex-direction: row;
       justify-content: space-around; }
+  .current-page {
+    top: 1em; }
   .pepeha {
     margin: 5em 0; }
     .pepeha h3 {
@@ -6610,3 +6622,49 @@ body {
 
 .work-wrapper {
   height: 100vh; }
+
+.contactme {
+  width: 100%;
+  background-image: url("../images/connect-small.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.connect-wrapper {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center; }
+
+.connect-links li {
+  text-align: center;
+  margin: 1.5em 0; }
+
+.social-icons {
+  width: 60%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s; }
+  .social-icons:hover {
+    background-color: #a5b6cd; }
+
+.disclaimer-btn {
+  background: 0;
+  color: #a5b6cd;
+  font-weight: lighter; }
+  .disclaimer-btn:hover {
+    color: #ffffff; }
+
+@media (min-width: 768px) {
+  .connect-links {
+    width: 50%;
+    margin-bottom: 4em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between; } }
