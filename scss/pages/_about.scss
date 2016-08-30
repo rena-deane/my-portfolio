@@ -30,7 +30,7 @@
   margin: 3em 0;
   h3 {
     @include font-feature(2em, 600, .5em, center);
-    color: $whakairo-red;
+    color: $grey-blue;
   }
 }
 
@@ -46,6 +46,7 @@
 
   .about-wrapper {
     background-image: url('../images/hinepare-large.jpg');
+    @include content-background(cover, fixed, no-repeat, left);
     .about  {
       flex-direction: row;
       justify-content: space-around;

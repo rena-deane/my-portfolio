@@ -11,14 +11,33 @@
 }
 
 .connect-links {
-  width: 100%;
   li {
     text-align: center;
-    margin: 3em 0;
+    margin: 1.5em 0;
   }
 }
 
 .social-icons {
-  width: 20%;
+  width: 60%;
+  @include transition-all(.5s);
+  &:hover {
+    background-color: $sky-misty-blue;
+  }
 }
 
+.disclaimer-btn {
+  background: 0;
+  color: $sky-misty-blue;
+  font-weight: lighter;
+  &:hover {
+    color: $white;
+  }
+}
+
+@media (min-width: 768px) {
+  .connect-links {
+    width: 50%;
+    margin-bottom: 4em;
+    @include flex-box (row, center, center, space-between)
+  }
+}

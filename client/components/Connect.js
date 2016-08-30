@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Disclaimer from './subcomponents/Disclaimer'
+
 
 class Connect extends Component {
   render () {
@@ -11,10 +13,18 @@ class Connect extends Component {
           </div>
 
           <ul className='connect-links'>
-            <li><img src='../../public/images/github.svg' className='social-icons'/></li>
-            <li><img src='../../public/images/linkedin.svg' className='social-icons'/></li>
-            <li><img src='../../public/images/twitter.svg' className='social-icons'/></li>
+            <li>
+              <img src='../../public/images/github.svg' className='social-icons'/>
+            </li>
+            <li>
+              <img src='../../public/images/linkedin.svg' className='social-icons'/>
+            </li>
+            <li>
+              <img src='../../public/images/twitter.svg' className='social-icons'/>
+            </li>
           </ul>
+
+          <Disclaimer />
 
       </div>
     )
