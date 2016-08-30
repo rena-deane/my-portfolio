@@ -20,7 +20,7 @@
 .current-page {
   @include font-feature(1.75em, lighter, 0, right);
   position: absolute;
-  top: .75em;
+  top: 2.5em;
   z-index: 1;
   width: 95%;
   color: $sky-misty-blue;
@@ -50,6 +50,10 @@
       flex-direction: row;
       justify-content: space-around;
     }
+  }
+
+  .current-page {
+    top: 1em;
   }
 
   .pepeha {

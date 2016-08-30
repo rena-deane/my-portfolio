@@ -6468,6 +6468,9 @@ body {
     padding: 0 .5em;
     text-align: center; }
 
+.quote.maori {
+  font-size: 2em; }
+
 .quote.pakeha {
   font-size: 1.5em; }
 
@@ -6477,13 +6480,17 @@ body {
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
   .content-wrapper.home {
-    height: 100vh; } }
+    height: 100vh; }
+  .quote.maori {
+    font-size: 3em; }
+  .quote.pakeha {
+    font-size: 2em; } }
 
 @media (min-width: 768px) {
   .quote.maori {
     font-size: 4em; }
   .quote.pakeha {
-    font-size: 2em; } }
+    font-size: 2.75em; } }
 
 .abouts {
   width: 100%;
@@ -6511,7 +6518,7 @@ body {
   margin-bottom: 0;
   text-align: right;
   position: absolute;
-  top: .75em;
+  top: 2.5em;
   z-index: 1;
   width: 95%;
   color: #a5b6cd; }
@@ -6545,6 +6552,8 @@ body {
     .about-wrapper .about {
       flex-direction: row;
       justify-content: space-around; }
+  .current-page {
+    top: 1em; }
   .pepeha {
     margin: 5em 0; }
     .pepeha h3 {
@@ -6610,3 +6619,29 @@ body {
 
 .work-wrapper {
   height: 100vh; }
+
+.contactme {
+  width: 100%;
+  background-image: url("../images/connect-small.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.connect-wrapper {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center; }
+
+.connect-links {
+  width: 100%; }
+  .connect-links li {
+    text-align: center;
+    margin: 3em 0; }
+
+.social-icons {
+  width: 20%; }

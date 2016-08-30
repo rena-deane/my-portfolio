@@ -1,0 +1,24 @@
+.contactme {
+  width: 100%;
+  background-image: url('../images/connect-small.png');
+  @include content-background(cover, fixed, no-repeat, center);
+}
+
+.connect-wrapper {
+  height: 100vh;
+  position: relative;
+  @include flex-box (column, center, center, center)
+}
+
+.connect-links {
+  width: 100%;
+  li {
+    text-align: center;
+    margin: 3em 0;
+  }
+}
+
+.social-icons {
+  width: 20%;
+}
+
