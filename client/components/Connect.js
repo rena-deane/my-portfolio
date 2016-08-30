@@ -14,13 +14,13 @@ class Connect extends Component {
 
           <ul className='connect-links'>
             <li>
-              <img src='../../public/images/github.svg' className='social-icons'/>
+              <a href='https://github.com/rena-deane'><img src='../../public/images/github.svg' className='social-icons'/></a>
             </li>
             <li>
-              <img src='../../public/images/linkedin.svg' className='social-icons'/>
+              <a href='https://nz.linkedin.com/in/renadeane'><img src='../../public/images/linkedin.svg' className='social-icons'/></a>
             </li>
             <li>
-              <img src='../../public/images/twitter.svg' className='social-icons'/>
+              <a href='https://twitter.com/renaGoldsmith'><img src='../../public/images/twitter.svg' className='social-icons'/></a>
             </li>
           </ul>
 

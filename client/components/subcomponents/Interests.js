@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Button, Modal, ModalHeader, OverlayTrigger, Popover, Tooltip } from 'react-bootstrap'
 
 
-class AboutMe extends Component {
+class Interests extends Component {
   constructor(props){
     super(props)
     this.state = {
@@ -63,4 +63,4 @@ class AboutMe extends Component {
   }
 }
 
-export default AboutMe
+export default Interests

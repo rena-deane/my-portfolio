@@ -58,15 +58,15 @@ class AboutMe extends Component {
 
             <div className='aboutme'>
               <p className='about-content'>
-                Born and bred on the East Coast of the North Island, Ruatoria and Rangitukia.
+                I was born and bred on the East Coast of the North Island, Ruatoria and Rangitukia.  Here, I was immersed in te reo me ona tikanga.
               </p>
 
               <p className='about-content'>
-                I was raised and immersed in a culturally strong environment where the traditions, practices and perspectives of my whanau, hapu and iwi were exercised daily.
+                I love getting together with whanau and friends, food, sports, swimming and doing bombs (sometimes), breathing in fresh country air, and learning about new techonologies, teaching what I have learnt, and creating things - anything.
               </p>
 
               <p className='about-content'>
-                This cultural strength provides me with the confidence and competence to act, think and behave in ways that allow me to recognise and respect the distinctiveness of others.
+                I’m fortunate to come from a family who really value education and I’m aware that not everyone has this foundation.  So I strongly believe in the saying, “When you learn, teach“.  When I feel like I’ve learnt all I can I hope one day I’ll be able to introduce and teach programming to rural communities around the country starting with my beloved East Coast.  Most importantly I want to spread the message of how important education is and that it’s all around us.
               </p>
             </div>
 
