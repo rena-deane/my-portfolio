@@ -1,14 +1,17 @@
 .resumes {
-  background-image: url('../images/resume-large.png');
-  @include content-background(cover, fixed, no-repeat, center);
+  background-image: url('../images/resume-small.png');
+  @include content-background(cover, no-repeat, center);
   .resume-wrapper {
-    @include flex-box (column, center, center, flex-end);
+    @include flex-box (column, center, center, center);
     height: 100vh;
     position: relative;
   }
   .resume-tbc {
     @include flex-box (column, center, center, center);
     position: relative;
+    background-color: rgba($black, .7);
+    padding: 1em;
+    border-radius: 1em;
   }
   .project-content {
     color: $white;
@@ -22,4 +25,12 @@
   font-size: 4em;
   text-align: center;
   margin: 0.25em 0;
+}
+
+@media (min-width: 768px) {
+  .resumes {
+    background-image: url('../images/resume-large.png');
+    @include content-background(cover, no-repeat, center);
+    background-attachment: fixed;
+  }
 }

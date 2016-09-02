@@ -1,9 +1,9 @@
 .projects-wrapper {
-  background-image: url('../images/projects.jpg');
-  @include content-background(cover, fixed, no-repeat, center);
   position: relative;
   width: 100%;
   height: 100vh;
+  background-image: url('../images/projects-small.png');
+  @include content-background(cover, no-repeat, center);
   .projects {
     height: 100vh;
     display: flex;
@@ -29,7 +29,9 @@
 
 @media (min-width: 768px) {
   .projects-wrapper {
-    @include content-background(cover, fixed, no-repeat, center);
+    background-image: url('../images/projects.jpg');
+    @include content-background(cover, no-repeat, center);
+    background-attachment: fixed;
     .projects {
       flex-direction: row;
       justify-content: space-around;
