@@ -6718,7 +6718,6 @@ body {
     background-position: center;
     background-attachment: fixed; }
   .connect-links {
-    width: 50%;
     margin-bottom: 4em;
     display: flex;
     flex-direction: row;
