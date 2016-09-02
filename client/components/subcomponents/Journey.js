@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import { Button, Modal, ModalHeader, OverlayTrigger, Popover, Tooltip } from 'react-bootstrap'
 
-
 class Journey extends Component {
-  constructor(props){
+  constructor (props) {
     super(props)
     this.state = {
       showModal: false,
@@ -11,40 +10,34 @@ class Journey extends Component {
     }
   }
 
-  componentDidMount() {
+  componentDidMount () {
     this.setState({ isFetching: false })
   }
 
-  close() {
+  close () {
     this.setState({ showModal: false })
   }
 
-  open() {
+  open () {
     this.setState({ showModal: true })
   }
 
-  render() {
-
+  render () {
     return (
       <div className='about-modals'>
-        <Button
-          bsStyle="primary"
-          bsSize="large"
-          onClick={this.open.bind(this)}
-        >
+        <Button bsStyle='primary' bsSize='large' onClick={this.open.bind(this)}>
           Te Ara / Journey
         </Button>
-
         <Modal show={this.state.showModal} onHide={this.close.bind(this)}>
           <Modal.Header closeButton>
-            <Modal.Title className='about-headings'>Te Ara / Journey</Modal.Title>
+            <Modal.Title className='about-headings'>
+              Te Ara / Journey
+            </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-
             <p className='about-content'>
-              It has been a long windy one.  This could take a while!
+              It has been a long windy one. This could take a while!
             </p>
-
           </Modal.Body>
         </Modal>
       </div>

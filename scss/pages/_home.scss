@@ -1,5 +1,5 @@
 .content-wrapper.home {
-  background-image: url('../../public/images/waiapu-valley-small.png');
+  background-image: url('../images/waiapu-valley-small.png');
   @include content-background(cover, no-repeat, center);
   display: none;
   height: 100vh;
@@ -50,7 +50,7 @@
 
 @media (min-width: 768px) {
   .content-wrapper.home {
-    background-image: url('../../public/images/waiapu-valley-1.jpg');
+    background-image: url('../images/waiapu-valley-1.jpg');
     @include content-background(cover, no-repeat, center);
     background-attachment: fixed;
   }

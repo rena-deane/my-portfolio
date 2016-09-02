@@ -11,11 +11,10 @@ class About extends Component {
       <div className='about-wrapper'>
         <h3 className='current-page'>About</h3>
         <div className='about journey'>
-            <AboutMe />
-            <Journey />
-            <Interests />
+          <AboutMe />
+          <Journey />
+          <Interests />
         </div>
-
       </div>
     )
   }

@@ -3,7 +3,6 @@ import ProjectOne from './subcomponents/ProjectOne'
 import ProjectTwo from './subcomponents/ProjectTwo'
 import ProjectThree from './subcomponents/ProjectThree'
 
-
 class Projects extends Component {
   render () {
     return (

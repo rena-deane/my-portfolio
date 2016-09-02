@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Navbar, Nav, NavItem } from 'react-bootstrap'
 
 class Navigation extends Component {
-  constructor(props){
+  constructor (props) {
     super(props)
     this.state = {
       isScrolling: false,
@@ -10,15 +10,15 @@ class Navigation extends Component {
     }
   }
 
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
+  componentDidMount () {
+    window.addEventListener('scroll', this.handleScroll)
     this.setState({
-      isFetching: false,
+      isFetching: false
     })
   }
 
   componentWillUnmount () {
-    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener('scroll', this.handleScroll)
   }
 
   handleScroll () {
@@ -33,7 +33,7 @@ class Navigation extends Component {
 
   render () {
     return (
-      <Navbar fixedTop className={this.state.isScrolling ? 'scroll' : '' }>
+      <Navbar fixedTop className={this.state.isScrolling ? 'scroll' : ''}>
         <Navbar.Header>
           <Navbar.Brand>
             <a href='#'>Rena-Deane</a>
@@ -42,7 +42,11 @@ class Navigation extends Component {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight>
-            <NavItem eventKey={1} href='#about' className='list-link' data-hover='Ko Au'>
+            <NavItem
+              eventKey={1}
+              href='#about'
+              className='list-link'
+              data-hover='Ko Au'>
               ABOUT
             </NavItem>
             <NavItem eventKey={2} href='#projects' className='list-link'>
