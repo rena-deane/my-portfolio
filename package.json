@@ -10,6 +10,7 @@
     "dist": "mkdir -p dist && bash -c 'cp *.{js,html,css} dist'",
     "push": "gh-pages -d dist",
     "deploy": "npm run build && npm run dist && npm run push",
+    "post-css": "postcss -u autoprefixer public/css/main.css -d public/css",
     "build-css": "node-sass --include-path scss scss/main.scss   public/css/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
     "lint": "standard --fix"
@@ -40,12 +41,14 @@
     "react-router": "^2.7.0"
   },
   "devDependencies": {
+    "autoprefixer": "^6.4.0",
     "browserify": "^13.0.0",
     "budo": "^8.2.0",
     "eyeglass": "^0.8.3",
     "gh-pages": "^0.11.0",
     "node-sass": "^3.8.0",
     "nodemon": "^1.10.0",
+    "postcss-cli": "^2.6.0",
     "standard": "^7.1.2",
     "tap-spec": "^4.1.1",
     "tape": "^4.5.1",

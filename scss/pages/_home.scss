@@ -1,7 +1,7 @@
 .content-wrapper.home {
+  background-image: url('../../public/images/waiapu-valley-small.png');
+  @include content-background(cover, no-repeat, center);
   display: none;
-  background-image: url('../../public/images/waiapu-valley-1.jpg');
-  @include content-background(cover, fixed, no-repeat, center)
   height: 100vh;
   display: flex;
   align-items: center;
@@ -49,6 +49,11 @@
 }
 
 @media (min-width: 768px) {
+  .content-wrapper.home {
+    background-image: url('../../public/images/waiapu-valley-1.jpg');
+    @include content-background(cover, no-repeat, center);
+    background-attachment: fixed;
+  }
   .quote.maori {
     font-size: 4em;
   }

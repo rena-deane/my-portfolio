@@ -6444,12 +6444,11 @@ body {
   display: block; }
 
 .content-wrapper.home {
-  display: none;
-  background-image: url("../../public/images/waiapu-valley-1.jpg");
+  background-image: url("../../public/images/waiapu-valley-small.png");
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
+  display: none;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -6486,19 +6485,24 @@ body {
     font-size: 2em; } }
 
 @media (min-width: 768px) {
+  .content-wrapper.home {
+    background-image: url("../../public/images/waiapu-valley-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; }
   .quote.maori {
     font-size: 4em; }
   .quote.pakeha {
     font-size: 2.75em; } }
 
 .abouts {
-  width: 100%;
-  height: 100vh;
   background-image: url("../images/hinepare-small.jpg");
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  width: 100%;
+  height: 100vh; }
   .abouts .about-wrapper {
     position: relative; }
   .abouts .about {
@@ -6549,9 +6553,9 @@ body {
   .about-wrapper {
     background-image: url("../images/hinepare-large.jpg");
     background-size: cover;
-    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: left; }
+    background-position: left;
+    background-attachment: fixed; }
     .about-wrapper .about {
       flex-direction: row;
       justify-content: space-around; }
@@ -6578,14 +6582,13 @@ body {
     margin-bottom: 1em; } }
 
 .projects-wrapper {
-  background-image: url("../images/projects.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
   position: relative;
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  background-image: url("../images/projects-small.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
   .projects-wrapper .projects {
     height: 100vh;
     display: flex;
@@ -6612,18 +6615,18 @@ body {
 
 @media (min-width: 768px) {
   .projects-wrapper {
+    background-image: url("../images/projects.jpg");
     background-size: cover;
-    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center; }
+    background-position: center;
+    background-attachment: fixed; }
     .projects-wrapper .projects {
       flex-direction: row;
       justify-content: space-around; } }
 
 .resumes {
-  background-image: url("../images/resume-large.png");
+  background-image: url("../images/resume-small.png");
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center; }
   .resumes .resume-wrapper {
@@ -6631,7 +6634,7 @@ body {
     flex-direction: column;
     align-items: center;
     align-content: center;
-    justify-content: flex-end;
+    justify-content: center;
     height: 100vh;
     position: relative; }
   .resumes .resume-tbc {
@@ -6640,7 +6643,10 @@ body {
     align-items: center;
     align-content: center;
     justify-content: center;
-    position: relative; }
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1em;
+    border-radius: 1em; }
   .resumes .project-content {
     color: #ffffff;
     font-weight: lighter; }
@@ -6652,34 +6658,45 @@ body {
   text-align: center;
   margin: 0.25em 0; }
 
+@media (min-width: 768px) {
+  .resumes {
+    background-image: url("../images/resume-large.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; } }
+
 .contactme {
   width: 100%;
+  height: 100vh;
   background-image: url("../images/connect-small.png");
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center; }
-
-.connect-wrapper {
-  height: 100vh;
-  position: relative;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
   justify-content: center; }
 
+.connect-wrapper {
+  position: relative; }
+
 .connect-links li {
   text-align: center;
   margin: 1.5em 0; }
 
 .social-icons {
-  width: 60%;
+  width: 5em;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s; }
   .social-icons:hover {
     background-color: #a5b6cd; }
+
+.disclaimer-modal {
+  display: flex;
+  justify-content: center; }
 
 .disclaimer-btn {
   background: 0;
@@ -6689,7 +6706,17 @@ body {
   .disclaimer-btn:hover {
     color: #ffffff; }
 
+@media (min-width: 480px) {
+  .connect-links {
+    flex-direction: row; } }
+
 @media (min-width: 768px) {
+  .contactme {
+    background-image: url("../images/connect-large.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; }
   .connect-links {
     width: 50%;
     margin-bottom: 4em;

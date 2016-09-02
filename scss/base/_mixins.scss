@@ -31,9 +31,8 @@
   margin-bottom: 1em;
 }
 
-@mixin content-background($size, $attach, $repeat, $position) {
+@mixin content-background($size, $repeat, $position) {
   background-size: $size;
-  background-attachment: $attach;
   background-repeat: $repeat;
   background-position: $position;
 }

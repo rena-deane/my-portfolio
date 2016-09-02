@@ -1,13 +1,13 @@
 .contactme {
   width: 100%;
+  height: 100vh;
   background-image: url('../images/connect-small.png');
-  @include content-background(cover, fixed, no-repeat, center);
+  @include content-background(cover, no-repeat, center);
+  @include flex-box (column, center, center, center)
 }
 
 .connect-wrapper {
-  height: 100vh;
   position: relative;
-  @include flex-box (column, center, center, center)
 }
 
 .connect-links {
@@ -18,11 +18,16 @@
 }
 
 .social-icons {
-  width: 60%;
+  width: 5em;
   @include transition-all(.5s);
   &:hover {
     background-color: $sky-misty-blue;
   }
+}
+
+.disclaimer-modal {
+  display: flex;
+  justify-content: center;
 }
 
 .disclaimer-btn {
@@ -35,7 +40,18 @@
   }
 }
 
+@media (min-width: 480px) {
+  .connect-links {
+    flex-direction: row;
+  }
+}
+
 @media (min-width: 768px) {
+  .contactme {
+    background-image: url('../images/connect-large.jpg');
+    @include content-background(cover, no-repeat, center);
+    background-attachment: fixed;
+  }
   .connect-links {
     width: 50%;
     margin-bottom: 4em;
