@@ -6346,8 +6346,6 @@ body {
         align-items: center; }
       .navbar-default.scroll .container .connect a {
         padding: 0.25em 0.75em; }
-  .navbar-default.scroll {
-    display: none; }
   li.list-link.connect a {
     border: 2px solid #ffffff;
     background-color: none;
