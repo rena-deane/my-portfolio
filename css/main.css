@@ -6724,7 +6724,4 @@ body {
     flex-direction: row;
     align-items: center;
     align-content: center;
-    justify-content: space-between; }
-    .connect-links li {
-      margin-left: 1em;
-      margin-right: 1em; } }
+    justify-content: space-around; } }
