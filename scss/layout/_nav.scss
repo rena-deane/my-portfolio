@@ -76,7 +76,7 @@
   }
 
 /* Use if you want a fixed nav throughout site*/
-/*   .navbar-default.scroll {
+  .navbar-default.scroll {
     background-color: rgba($sky-misty-blue, .75);
     display: flex;
     align-items: center;
@@ -91,10 +91,6 @@
         padding: 0.25em 0.75em;
       }
     }
-  } */
-
-  .navbar-default.scroll {
-    display: none;
   }
 
   li.list-link.connect a {
@@ -118,7 +114,7 @@
     font-weight: 100;
     margin-left: 1.75em;
   }
-/*   .navbar-default.scroll {
+  .navbar-default.scroll {
     height: 4em;
-  } */
+  }
 }

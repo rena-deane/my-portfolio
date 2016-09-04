@@ -6334,24 +6334,18 @@ body {
       font-size: 1.75em;
       margin-left: 1.25em; }
   /* Use if you want a fixed nav throughout site*/
-  /*   .navbar-default.scroll {
-    background-color: rgba($sky-misty-blue, .75);
+  .navbar-default.scroll {
+    background-color: rgba(165, 182, 205, 0.75);
     display: flex;
     align-items: center;
-    height: 3.5em;
-    .container {
-      margin: 0 auto;
-      ul.nav {
+    height: 3.5em; }
+    .navbar-default.scroll .container {
+      margin: 0 auto; }
+      .navbar-default.scroll .container ul.nav {
         display: flex;
-        align-items: center;
-      }
-      .connect a {
-        padding: 0.25em 0.75em;
-      }
-    }
-  } */
-  .navbar-default.scroll {
-    display: none; }
+        align-items: center; }
+      .navbar-default.scroll .container .connect a {
+        padding: 0.25em 0.75em; }
   li.list-link.connect a {
     border: 2px solid #ffffff;
     background-color: none;
@@ -6367,9 +6361,8 @@ body {
     font-size: 2em;
     font-weight: 100;
     margin-left: 1.75em; }
-  /*   .navbar-default.scroll {
-    height: 4em;
-  } */ }
+  .navbar-default.scroll {
+    height: 4em; } }
 
 .modal-dialog {
   display: flex;
@@ -6724,7 +6717,4 @@ body {
     flex-direction: row;
     align-items: center;
     align-content: center;
-    justify-content: space-between; }
-    .connect-links li {
-      margin-left: 1em;
-      margin-right: 1em; } }
+    justify-content: space-around; } }

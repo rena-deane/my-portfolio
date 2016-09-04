@@ -24,7 +24,7 @@ class Navigation extends Component {
   handleScroll () {
     let body = document.getElementsByTagName('body')[0]
     let navbar = document.getElementsByClassName('navbar')[0]
-    if (body.scrollTop > 100) {
+    if (body.scrollTop > 500) {
       return navbar.classList.add('scroll')
     } else {
       return navbar.classList.remove('scroll')

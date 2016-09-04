@@ -4,7 +4,6 @@ class Resume extends Component {
   render () {
     return (
       <div className='resume-wrapper'>
-        <h3 className='current-page'>Resume / Work</h3>
         <div className='resume-tbc'>
           <h1 className='wip'>Kaore ano kia oti</h1>
           <h1 className='wip'>Coming soon</h1>

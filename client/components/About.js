@@ -9,7 +9,6 @@ class About extends Component {
   render () {
     return (
       <div className='about-wrapper'>
-        <h3 className='current-page'>About</h3>
         <div className='about journey'>
           <AboutMe />
           <Journey />
