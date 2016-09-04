@@ -6680,7 +6680,8 @@ body {
   justify-content: center; }
 
 .connect-wrapper {
-  position: relative; }
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.2em; }
 
 .connect-links li {
   text-align: center;
@@ -6723,4 +6724,7 @@ body {
     flex-direction: row;
     align-items: center;
     align-content: center;
-    justify-content: space-between; } }
+    justify-content: space-between; }
+    .connect-links li {
+      margin-left: 1em;
+      margin-right: 1em; } }
